@@ -13,4 +13,9 @@ h1{
     color: #bb7700;
     font-size: 40pt;
    
+
+header
+{
+    height: 120px;
+    background-color: #764207;
 }
