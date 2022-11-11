@@ -4,3 +4,13 @@
     margin: 0;
     padding: 0;
 }
+
+#om{
+    display: flex;
+}
+
+h1{
+    color: #bb7700;
+    font-size: 40pt;
+   
+}
