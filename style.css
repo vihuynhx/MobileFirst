@@ -5,8 +5,14 @@
     padding: 0;
 }
 
-#om{
+.om{
     display: flex;
+}
+
+.omstreetcoffee{
+    width: 750px;
+    margin: 80px;
+    margin-top: 150px;
 }
 
 h1{
@@ -15,8 +21,24 @@ h1{
     font-family: 'Nanum Gothic', sans-serif;
 }
 
+#overskrift{
+    font-size: 70pt;
+    text-align: center;
+}
+
+#velkommen{
+    text-align:center;
+    margin-top: 30px;
+    font-size: 22pt;
+}
+
 #læsmere{
-    
+    margin-top: 40px;
+    margin-left: 325px;
+}
+
+#kaffe{
+  
 }
 
 header
