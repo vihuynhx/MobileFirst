@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+
 }
 
 #om{
@@ -16,7 +18,21 @@ h1{
 
 header
 {
-    height: 120px;
+    height: 500px;
     background-color: #764207;
     font-family: 'Nanum Gothic', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+
+.headertop
+{
+    display: flex;
+}
+header nav a
+{
+    text-decoration: none;
+    color:white;
 }
