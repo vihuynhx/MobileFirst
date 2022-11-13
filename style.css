@@ -7,16 +7,27 @@
     overflow-x: hidden /*Ellers er der et hvidt felt til højre*/
 }
 
+/*header*/
+header
+{
+    height: 120px;
+    background-color: #764207;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/*øverste del i main*/
 .om{
     display: flex;
 }
 
+/*placeringen af teksten øverst i main*/
 .omstreetcoffee{
     width: 750px;
     margin: 80px;
-    margin-top: 150px;
+    margin-top: 200px;
 }
 
+/*layout af teksten øverst i main*/
 h1{
     color: #bb7700;
     font-size: 40pt;
@@ -34,8 +45,9 @@ h1{
     font-size: 22pt;
 }
 
+/*placeringen af læs mere knappen*/
 #læsmere{
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 325px;
 }
 
@@ -100,3 +112,4 @@ a:hover {
     background-color: tan;
 
 }
+
