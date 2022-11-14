@@ -50,7 +50,6 @@ header p
     max-width: 80%;
     margin: auto;
     font-size: 23pt;
-    margin-top: 30px;
 }
 
 #navLaptop a
@@ -119,12 +118,6 @@ header p
     #headerlogomobil
     {
         display:none;
-    }
-
-    footer
-    {
-        
-        display:block
     }
 
 }
@@ -219,7 +212,6 @@ p {
 }
 
 
-
 footer
 {
 
@@ -275,8 +267,6 @@ footer img
     outline: none;
     background-color: #e6dfd6;
 
-    
-
 }
 
 .sendbutton
@@ -305,7 +295,6 @@ footer img
     margin-right: auto;
     align-content: center;
 }
-
 
 
 .emailcontainer
