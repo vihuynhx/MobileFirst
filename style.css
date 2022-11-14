@@ -50,7 +50,6 @@ header p
     max-width: 80%;
     margin: auto;
     font-size: 23pt;
-    margin-top: 30px;
 }
 
 #navLaptop a
@@ -119,12 +118,6 @@ header p
     #headerlogomobil
     {
         display:none;
-    }
-
-    footer
-    {
-        
-        display:block
     }
 
 }
@@ -228,10 +221,11 @@ width: 50%;
 }
 
 
+
 /*FOOTER*/
+
 footer
 {
-
     height: 300px;
     background-color: #764207;
     font-family: 'Nanum Gothic', sans-serif;
@@ -284,8 +278,6 @@ footer img
     outline: none;
     background-color: #e6dfd6;
 
-    
-
 }
 
 .sendbutton
@@ -308,13 +300,13 @@ footer img
 }
 
 .nyhedsbrevbody img
-{   margin-top: 30px;
+{  
+    margin-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
 }
-
 
 
 .emailcontainer
