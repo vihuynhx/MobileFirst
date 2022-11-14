@@ -7,61 +7,16 @@
     overflow-x: hidden /*Ellers er der et hvidt felt til højre*/
 }
 
-/*header*/
+/*HEADER*/
+
 header
 {
-    height: 120px;
-    background-color: #764207;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
-/*øverste del i main*/
-.om{
-    display: flex;
-}
-
-/*placeringen af teksten øverst i main*/
-.omstreetcoffee{
-    width: 750px;
-    margin: 80px;
-    margin-top: 200px;
-}
-
-/*layout af teksten øverst i main*/
-h1{
-    color: #bb7700;
-    font-size: 40pt;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-
-#overskrift{
-    font-size: 70pt;
-    text-align: center;
-}
-
-#velkommen{
-    text-align:center;
-    margin-top: 30px;
-    font-size: 22pt;
-}
-
-/*placeringen af læs mere knappen*/
-#læsmere{
-    margin-top: 50px;
-    margin-left: 325px;
-}
-
-/*>>>HEADER<<<*/
-header
-{
-    height: 230px;
     background-color: #764207;
     font-family:'Dosis', sans-serif;
     text-transform: uppercase;
     color: white;
     text-decoration: none;
 }
-
 header section
 {
     display: flex;
@@ -73,7 +28,6 @@ header section
     margin: -55px;
 }
 
-
 .headersome
 {
     justify-content: end;
@@ -82,15 +36,13 @@ header section
     margin-top: 5px;
 }
 
-
-
 header p
 {
     margin-top: 11px;
     font-size: 17pt;
 }
 
-header nav 
+#navLaptop
 {
     display: flex;
     justify-content: space-evenly;
@@ -101,17 +53,172 @@ header nav
     margin-top: 30px;
 }
 
-
-header nav a
+#navLaptop a
 {
     text-decoration: none;
     color:white;
 
 }
 
-nav a:hover {
+#navLaptop a:hover 
+{
     background-color: tan;
 }
+
+#navMobile > a > img
+{
+    width:100%; 
+}
+/*--------------------------------------------------------------------/*
+/*MOBIL RESPONSIVE*/
+@media only screen and (max-width: 530px)
+{
+    /*Distribuer elementer anderledes:*/
+ 
+    /* Skjul laptopmenuen. */
+
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navLaptop, .headersome, .headerlogo
+    {
+        display:none; 
+    }
+
+    /* Burgermenuen skal have en bredde */
+   #navMobile
+   {
+    display: flex;
+    justify-content:right;
+    width: 100%;
+    margin-top: 8px;
+    margin-right: 5px;
+
+   }
+    #headerlogomobil /* Logoet skal være mindre på mobil. */
+    { 
+        margin-left: 10px;
+        width: 100%;
+        padding: 7px;
+    }    
+}
+
+/*--------------------------------------------------------------------/*
+
+/*LAPTOP RESPONSIVE*/
+@media screen and (min-width: 530px)
+{
+    /* Skjul mobilmenuen.*/
+    #navMobile
+    {
+        display:none;
+    }
+    #headerlogomobil
+    {
+        display:none;
+    }
+
+    footer div
+    {
+
+        display:block
+    }
+
+}
+/*øverste del i main*/
+.om{
+    display: flex;
+}
+
+#kaffe {
+width: 50%;
+}
+
+#kaffe img{
+    width: 100%;
+    }
+
+/*placeringen af teksten øverst i main*/
+.omstreetcoffee{
+    width: 50%;
+    margin-top: 200px;
+}
+
+/*layout af teksten øverst i main*/
+.om h1{
+    color: #bb7700;
+    font-size: 70pt;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+}
+
+/*brødtekst layout*/
+p {
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 22pt; 
+}
+
+/*placeringen af læs mere knappen*/
+#læsmere{
+    margin-left: 470px;
+}
+
+.baggrundsfarve{
+    background-color: #e6dfd6;
+    margin-top: -5px;
+    padding-left: 80px;
+}
+
+/* flexbox til billederne i afsnittet vores cafeer*/
+.vorescafeer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.baggrundsfarve h2{
+    color: #764207;
+    font-size: 20pt;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.skilte{
+    margin-left: 13%;
+    position:relative;
+    bottom:55px;
+}
+
+.rabat{
+    display: flex;
+}
+
+.rabat h1{
+    color: #b47e4c;
+    font-size: 50pt;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center; 
+}
+
+#rabatbillede{
+    width: 50%;
+    
+}
+
+#rabattekst{
+    width: 50%;
+}
+
+#studierabat {
+    width: 100%;
+}
+
+
 
 footer
 {
