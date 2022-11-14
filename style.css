@@ -80,8 +80,9 @@ header section
     gap: 15px;
     margin-right: 50px;
     margin-top: 5px;
-
 }
+
+
 
 header p
 {
@@ -108,8 +109,120 @@ header nav a
 
 }
 
-a:hover {
+nav a:hover {
     background-color: tan;
+}
 
+footer
+{
+
+    height: 300px;
+    background-color: #764207;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+}
+
+footer section
+{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
+}
+
+footer section div h1
+{
+    font-size: 15pt;
+    color: white;
+}
+
+footer section div p
+
+{
+    line-height:35px;
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+#tilmeld
+{
+    line-height:22px;
+}
+
+footer img
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap:20px;
+}
+
+.mailbox
+{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 10px;
+    border: 5px;
+}
+
+.sendbutton
+{
+    background-color: #e6dfd6;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+  
+}
+
+.nyhedsbrevbody
+{
+    background: url(images/bønner2.png);
+    background-repeat: no-repeat;
+}
+
+.nyhedsbrevbody img
+{margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+
+
+.emailcontainer
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: #e6dfd6;
+    width: 500px;
+    height: 250px;
+}
+
+
+#tekstmail
+{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #764207;
+}
+
+#tekstmail p
+{
+    font-family:'Dosis', sans-serif;
+    font-size: 15pt;
+    white-space: nowrap;
 }
 
