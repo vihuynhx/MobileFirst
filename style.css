@@ -103,7 +103,9 @@ header p
         width: 100%;
         padding: 7px;
     }    
+    
 }
+
 
 /*--------------------------------------------------------------------/*
 
@@ -119,7 +121,6 @@ header p
     {
         display:none;
     }
-
 }
 
 /* MAIN */
@@ -241,9 +242,10 @@ footer
 
 footer section
 {
-    margin-top: 50px;
     display: flex;
+    margin-top: 50px;
     justify-content: space-evenly;
+    flex-direction: row;
     gap: 5%;
 }
 
