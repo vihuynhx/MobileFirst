@@ -123,15 +123,23 @@ width: 50%;
 }
 
 /*brødtekst layout*/
-.om, .rabat p {
+.om, .rabat, .nyhed p {
     text-align:center;
     font-size: 22pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     
 }
 
 /*placeringen af knap*/
-.knap{
-    margin-left: 450px;
+.knap {
+    padding-top: 20px;
+    margin-left: 350px;
+}
+
+.knap img{
+    margin-top: 50px;
 }
 
 .baggrundsfarve{
@@ -148,8 +156,10 @@ width: 50%;
 /*layout på "vores cafeer" overskrift*/
 .baggrundsfarve h2{
     color: #764207;
-    font-size: 20pt;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 24pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     margin-top: 30px;
     margin-bottom: 30px;
    
@@ -191,9 +201,117 @@ width: 50%;
     justify-content: space-around;
 }
 
-.ikoner div a{
-    padding-top: 20px;
-    padding-bottom: 20px;
+.ikoner div a img{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.ikoner div div a{
+    color: #764207;
+    font-size: 18pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+/*flexbox i nyhedsbrev afsnittet*/
+.nyhed{
+    display: flex;
+}
+
+/*layout på nyhedsbrev overskrift*/
+.nyhed h2{
+    color: #764207;
+    font-size: 38pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#nyhedafsnit{
+    margin-top: 40px;
+    margin-left: 240px;
+}
+
+.mailbox
+{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 10px;
+    transition: 0.6s;
+    font-size: 12pt;
+    border-radius: 15px 0px 0px 15px;
+    border: none;
+    outline: none;
+    background-color: #e6dfd6;
+
+}
+
+.sendbutton
+{
+    background-color: #e6dfd6;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+.nyhedsbrevbody
+{
+    background: url(images/bønner2.png);
+    background-repeat: no-repeat;
+}
+
+.nyhedsbrevbody img
+{  
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+
+.emailcontainer
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: #e6dfd6;
+    width: 500px;
+    height: 250px;
+}
+
+
+#tekstmail
+{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #764207;
+}
+
+#tekstmail p
+{
+    font-family:'Dosis', sans-serif;
+    font-size: 15pt;
+    white-space: nowrap;
 }
 
 /*FOOTER*/
