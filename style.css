@@ -25,7 +25,7 @@ header section
 .headerlogo
 {   
     justify-content: center;
-    margin: -55px;
+    margin-top: -100px;
 }
 
 .headersome
@@ -121,9 +121,9 @@ header p
         display:none;
     }
 
-    footer div
+    footer
     {
-
+        
         display:block
     }
 
