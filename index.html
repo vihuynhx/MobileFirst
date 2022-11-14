@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/uuo4xws.css">
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -55,8 +57,11 @@
             <div class="tekstboks">
                 <h1> Street Coffee</h1>
                 <p>Velkommen til Street Coffee, du finder <br> os på vores 4 caféer i hjertet af Aarhus. </p>
-                <a href="#" class="knap"> <img src="images/læsmere.png" alt="læs mere knap"> </a>
+                <div id="læsmereboks"> 
+                <a href="omos.html"><img src="images/læsmere.png" /><span>Læs mere!</span></a>
+                </div>
             </div>
+
             <div class="billedeboks">
                 <img src="images/kaffe.jpg" alt="kaffe">
             </div>
@@ -64,7 +69,7 @@
 
 
             <section class="baggrundsfarve">    
-                <h2> Vores caféer</h2>
+                <p> Vores caféer</p>
                 <section class="vorescafeer">
                     
                     <div>
@@ -93,21 +98,26 @@
             </div>
             <div class="tekstboks">
                 <h1>Studierabat</h1>
-                <p>Tag dit studiekort under armen og få <br> 10% hos os.</p>
-                <a href="#" class="knap"> <img src="images/semenuen.png" alt="se menuen knap"> </a>
+                <p>Tag dit studiekort under armen  <br>og få 10% hos os.</p>
+                <div id="læsmereboks"> 
+                    <a href="menu.html"> <img src="images/semenuen.png"><span>Se menuen</span></a>
+                </div>
             </div>
+
+             
+
         </section>
 
         <section class="baggrundscolor"> 
             <section class="ikoner"> 
                 <div>
-                    <a href="#"> <img src="images/pladeafspiller.png" alt="pladeafspiller"> </a>
+                    <a href="shop.html"> <img src="images/pladeafspiller.png" alt="pladeafspiller"> </a>
                     <div id="ikonteksthej">
                         <a href="shop.html">Besøg webshoppen</a>
                     </div>
                 </div>
                 <div>
-                    <a href="#"> <img src="images/coffee.png" alt="coffee"> </a>
+                    <a href="menu.html"> <img src="images/coffee.png" alt="coffee"> </a>
                     <div id="ikonteksthej">
                         <a href="menu.html">Se menuen</a>
                     </div>
@@ -128,9 +138,12 @@
             <div class="tekstboks">
                 <h2>Tilmeld dig vores nyhedsbrev</h2>
                 <p>Tilmeld dig vores nyhedsbrev, og bliv <br> opdateret på vores nyeste events.</p>
-                <form id="nyhedafsnit" action="nyhedsbrev.html">  <!--nyhedsbrev -->
-                    <input class="mailbox" placeholder="Indtast din e-mail" name="seach">
-                    <button class="sendbutton">Send</button>
+                <div id="indtastmail">
+                <form action="nyhedsbrev.html">  <!--nyhedsbrev -->
+                    <input class="mailbox1" placeholder="Indtast din e-mail" name="seach">
+                    <button class="sendbutton1">Send</button>
+                </div>
+
                 </form>
             </div>
         </section>
@@ -175,11 +188,6 @@
             <div>
                 <h1>Følg os</h1>  <!--Fjerde container -->
                 <a href="https://www.facebook.com/StreetCoffeedk/"><img src="images/fbpx45.png" alt="fb">
-                <a href="https://www.instagram.com/streetcoffeedk/?hl=da"><img src="images/insta45.png" alt=instra></a>
-                <p >
-                Cookie- & Privatlivspolitik <br>
-                Services    
-                </p>
                 <a href="https://www.instagram.com/streetcoffeedk/?hl=da"><img src="images/instapx45.png" alt=instra></a> <br>
                 <a id="somelink" href="#">Cookie- & Privatlivspolitik<br>
                     Services    </a>
