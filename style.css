@@ -156,7 +156,7 @@ width: 50%;
 }
 
 /*brødtekst layout*/
-p {
+.om .rabat p {
     text-align:center;
     margin-top: 30px;
     margin-bottom: 50px;
