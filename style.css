@@ -103,11 +103,14 @@ header p
 .billedeboks 
 {
     width: 50%;
+
 }
 
 .billedeboks img
 {
     width: 100%;
+    display: block;
+
 }
 
 /*placeringen af teksten øverst i main*/
@@ -334,6 +337,7 @@ footer
     background-color: #764207;
     font-family: 'Nanum Gothic', sans-serif;
     color: white;
+    height: 300px;
 }
 
 footer section
