@@ -128,11 +128,15 @@ header p
     }
 
 }
+
+/* MAIN */
+
 /*øverste del i main*/
 .om{
     display: flex;
 }
 
+/*boksen med billede og tekst skal fylde 50% hver*/
 #kaffe {
 width: 50%;
 }
@@ -156,7 +160,7 @@ width: 50%;
 }
 
 /*brødtekst layout*/
-.om .rabat p {
+.om, .rabat p {
     text-align:center;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -180,6 +184,7 @@ width: 50%;
     justify-content: space-around;
 }
 
+/*layout på "vores cafeer" overskrift*/
 .baggrundsfarve h2{
     color: #764207;
     font-size: 20pt;
@@ -188,16 +193,19 @@ width: 50%;
     margin-bottom: 30px;
 }
 
+/*cafe skiltene der går ind over cafe billederne*/
 .skilte{
     margin-left: 13%;
     position:relative;
     bottom:55px;
 }
 
+/*flexbox i studierabat afsnittet*/
 .rabat{
     display: flex;
 }
 
+/*layout på studierabat overskrift*/
 .rabat h1{
     color: #b47e4c;
     font-size: 50pt;
@@ -205,6 +213,7 @@ width: 50%;
     text-align: center; 
 }
 
+/*boksen med billede og tekst skal fylde 50% hver*/
 #rabatbillede{
     width: 50%;
     
@@ -219,7 +228,7 @@ width: 50%;
 }
 
 
-
+/*FOOTER*/
 footer
 {
 
