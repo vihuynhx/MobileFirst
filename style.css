@@ -130,44 +130,45 @@ header p
 }
 
 /*boksen med billede og tekst skal fylde 50% hver*/
-#kaffe {
+.billedeboks {
 width: 50%;
 }
 
-#kaffe img{
+.billedeboks img{
     width: 100%;
     }
 
 /*placeringen af teksten øverst i main*/
-.omstreetcoffee{
+.tekstboks{
     width: 50%;
-    margin-top: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /*layout af teksten øverst i main*/
 .om h1{
     color: #bb7700;
     font-size: 70pt;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: social-gothic-rough, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-align: center;
 }
 
 /*brødtekst layout*/
 .om, .rabat p {
     text-align:center;
-    margin-top: 30px;
-    margin-bottom: 50px;
     font-size: 22pt; 
+    
 }
 
-/*placeringen af læs mere knappen*/
-#læsmere{
-    margin-left: 470px;
+/*placeringen af knap*/
+.knap{
+    margin-left: 450px;
 }
 
 .baggrundsfarve{
     background-color: #e6dfd6;
-    margin-top: -5px;
     padding-left: 80px;
 }
 
@@ -184,6 +185,7 @@ width: 50%;
     font-family: 'Nanum Gothic', sans-serif;
     margin-top: 30px;
     margin-bottom: 30px;
+   
 }
 
 /*cafe skiltene der går ind over cafe billederne*/
@@ -202,25 +204,30 @@ width: 50%;
 .rabat h1{
     color: #b47e4c;
     font-size: 50pt;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: social-gothic-rough, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-align: center; 
 }
 
-/*boksen med billede og tekst skal fylde 50% hver*/
-#rabatbillede{
-    width: 50%;
-    
-}
-
-#rabattekst{
-    width: 50%;
-}
 
 #studierabat {
     width: 100%;
 }
 
+.baggrundscolor{
+    background-color: #e6dfd6;
+}
 
+.ikoner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ikoner div a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /*FOOTER*/
 
