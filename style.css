@@ -89,24 +89,30 @@ header p
     }
 }
 
+/*--------------------------------------------------------------------/*
+
 /* MAIN */
 
 /*øverste del i main*/
-.om{
+.om
+{
     display: flex;
 }
 
 /*boksen med billede og tekst skal fylde 50% hver*/
-.billedeboks {
-width: 50%;
+.billedeboks 
+{
+    width: 50%;
 }
 
-.billedeboks img{
+.billedeboks img
+{
     width: 100%;
-    }
+}
 
 /*placeringen af teksten øverst i main*/
-.tekstboks{
+.tekstboks
+{
     width: 50%;
     margin-top: auto;
     margin-bottom: auto;
@@ -145,6 +151,7 @@ width: 50%;
 .baggrundsfarve{
     background-color: #e6dfd6;
     padding-left: 80px;
+    margin: 0;
 }
 
 /* flexbox til billederne i afsnittet vores cafeer*/
@@ -194,10 +201,13 @@ width: 50%;
 
 .baggrundscolor{
     background-color: #e6dfd6;
+    height: 350px;
+    align-content: center;
 }
 
 .ikoner{
     display: flex;
+    justify-content: center;
     justify-content: space-around;
 }
 
@@ -211,9 +221,11 @@ width: 50%;
     font-size: 18pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 700;
-    font-style: normal;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
+
+
 
 /*flexbox i nyhedsbrev afsnittet*/
 .nyhed{
@@ -230,6 +242,7 @@ width: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
     text-align: center;
+
 }
 
 #nyhedafsnit{
