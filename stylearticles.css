@@ -209,7 +209,11 @@
 
 /* CSS til OM OS siden */
 
-.omos h1{
+.omos{
+    display: flex;
+}
+
+.vier h1{
     color: #bb7700;
     font-size: 70pt;
     font-family: social-gothic-rough, sans-serif;
@@ -217,17 +221,107 @@
     font-style: normal;
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
-.teksten{
-    display: flex;
+
+
+.tekstboks h2{
+    color: #764207;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-.teksten p{
+.tekstboks p{
     text-align:left;
-    font-size: 18pt; 
+    font-size: 14pt; 
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 35px;
+    margin-bottom: 20px;
 }
 
+/*boksen med billede og tekst skal fylde 50% hver*/
+.billedeboks 
+{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.billedeboks img
+{
+    width: 100%;
+    display: block;
+}
+
+/*placeringen af teksten øverst i main*/
+.tekstboks
+{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.kontakt{
+    display: flex;
+    height: 300px;
+    background-color: #e6dfd6;
+    margin-top: 40px;
+}
+
+.kontakt h2{
+    color: #764207;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+
+
+
+.kontakt p{
+    text-align:left;
+    font-size: 14pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 35px;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.billedeboks a img {
+    width: auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+} 
+
+.icons{
+    display: flex;
+}
+
+#fb{
+    
+}
+
+#insta{
+    padding-left: -15px;
+}
+
+.divboks{
+    height: 55px;
+    width: 55px;
+}
