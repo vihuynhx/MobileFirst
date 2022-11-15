@@ -341,6 +341,10 @@
 
 /* CSS til MENU siden */
 
+
+/* KAFFE MENU */
+
+/* Billede af kaffekop */
 .coffeemenupic{
     display: flex;
     justify-content: center;
@@ -381,7 +385,10 @@
 }
 
 .kaffemenu div ul li{
-    font-size: 22pt; 
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
     color: #f4d19c;
     padding: 5px 0px 5px 15px;
 }
@@ -395,4 +402,11 @@
     color: #764207;
     font-weight: 700;
 }
+
+
+
+
+
+/* DIVERSE MENU */
+
 
