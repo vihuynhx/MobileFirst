@@ -595,7 +595,7 @@ footer img
     .om
     {
         justify-content: center;
-        background-image: url(images/kaffe.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/kaffe.jpg);
         background-size: cover;
         background-position: center; 
         background-color: rgba(0, 0, 0, 0.199);
@@ -628,14 +628,15 @@ footer img
 .baggrundsfarve 
 {
     text-align: start;
-    height: 500px;
+    flex-direction: column;
+
 }
 
 .vorescafeer
 {
-    flex-direction: column;
-    background-color:#e6dfd6 ;
+    display: none;
 
 }
+
 
 }
