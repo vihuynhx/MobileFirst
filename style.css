@@ -182,7 +182,7 @@ header div{
 
 .baggrundsfarve{
     background-color: #e6dfd6;
-    padding-left: 80px;
+    padding-left: 50px;
     height: 500px;
 }
 
@@ -224,28 +224,32 @@ header div{
     text-align: center; 
 }
 
-
+/*billedet ved studierabat afsnittet*/
 #studierabat {
     width: 100%;
 }
 
+/* baggrundsfarven ved ikon afsnittet i main*/
 .baggrundscolor{
     background-color: #e6dfd6;
     height: 350px;
     align-content: center;
 }
 
+/*flexbox til ikonerne*/
 .ikoner{
     display: flex;
     justify-content: center;
     justify-content: space-around;
 }
 
+/*ikonernes placering*/
 .ikoner div a img{
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+/*layout på teksten i ikon afsnittet*/
 .ikoner div div a{
     color: #764207;
     font-size: 20pt;
@@ -260,6 +264,8 @@ header div{
 /*flexbox i nyhedsbrev afsnittet*/
 .nyhed{
     display: flex;
+    margin-right: 135px;
+    white-space: nowrap;
 }
 
 /*layout på nyhedsbrev overskrift*/
@@ -275,7 +281,7 @@ header div{
 
 }
 
-
+/* tilmeld dig nyhedsbrev knappen*/
 #nyhedafsnit{
     margin-top: 40px;
     margin-left: 240px;
