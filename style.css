@@ -4,107 +4,83 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    overflow-x: hidden /*Ellers er der et hvidt felt til højre*/
+    /*overflow-x: hidden*/ /*Ellers er der et hvidt felt til højre*/ /*Nein?*/
 }
 
 /*HEADER*/
 
-header
-{
+header{
     background-color: #764207;
     font-family:'Dosis', sans-serif;
     text-transform: uppercase;
-    color: white;
-    text-decoration: none;
 }
-header section
-{
+
+header section{
     display: flex;
+    width: 100%;
 }
 
-.headerlogo
-{   
+header div{
+    width: 33%;
+}
+
+.headerlogo img
+{
+    display: flex;   
     justify-content: center;
-    margin-top: -100px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
-.headersome
-{
+.socialmedia{
+    text-align: end;
+    padding: 15px 40px 0px 0px;
+    display: flex;
     justify-content: end;
+}
+
+.socialmedia a{
+    font-size: 16pt;
+    text-decoration: none;
+    color: white;
+    margin: 0px 8px;
+}
+
+.headersome .socialmedia #omos{
+    padding-top: 9px
+}
+
+.headersome{
     gap: 15px;
-    margin-right: 50px;
-    margin-top: 5px;
 }
 
-header p
-{
-    margin-top: 11px;
-    font-size: 17pt;
-}
 
-#navLaptop
-{
+#navLaptop{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     max-width: 80%;
     margin: auto;
-    font-size: 23pt;
-    margin-top: 30px;
+    font-size: 21pt;
+    padding-bottom: 10px;
 }
 
-#navLaptop a
-{
+#navLaptop a{
     text-decoration: none;
     color:white;
-
 }
 
 #navLaptop a:hover 
 {
-    background-color: tan;
+    text-decoration: underline;
 }
 
-#navMobile > a > img
-{
+#navMobile > a > img{
     width:100%; 
 }
-/*--------------------------------------------------------------------/*
-/*MOBIL RESPONSIVE*/
-@media only screen and (max-width: 530px)
-{
-    /*Distribuer elementer anderledes:*/
- 
-    /* Skjul laptopmenuen. */
 
-    header
-    {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #navLaptop, .headersome, .headerlogo
-    {
-        display:none; 
-    }
-
-    /* Burgermenuen skal have en bredde */
-   #navMobile
-   {
-    display: flex;
-    justify-content:right;
-    width: 100%;
-    margin-top: 8px;
-    margin-right: 5px;
-
-   }
-    #headerlogomobil /* Logoet skal være mindre på mobil. */
-    { 
-        margin-left: 10px;
-        width: 100%;
-        padding: 7px;
-    }    
-}
 
 /*--------------------------------------------------------------------/*
 
@@ -120,176 +96,223 @@ header p
     {
         display:none;
     }
-
-    footer
-    {
-        
-        display:block
-    }
-
 }
+
+/*--------------------------------------------------------------------/*
+
+/* MAIN */
+
 /*øverste del i main*/
-.om{
+.om
+{
     display: flex;
 }
 
-#kaffe {
-width: 50%;
+/*boksen med billede og tekst skal fylde 50% hver*/
+.billedeboks 
+{
+    width: 50%;
 }
 
-#kaffe img{
+.billedeboks img
+{
     width: 100%;
-    }
+    display: block;
+}
 
 /*placeringen af teksten øverst i main*/
-.omstreetcoffee{
+.tekstboks
+{
     width: 50%;
-    margin-top: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    
 }
 
+.tekstboks a 
+{
+    position: relative;
+    display: inline-block;
+}
+
+#læsmereboks
+{
+    margin-top: 20px;
+}
+.tekstboks a span
+{
+    width: 100%;
+    color: white;
+    font-size: 18pt;
+    font-family: 'Cutive', serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    display: inline-block;
+}​
+
+#læsmere
+{
+    color:black;
+    position: relative;
+    display: inline-block;
+}
 /*layout af teksten øverst i main*/
 .om h1{
     color: #bb7700;
     font-size: 70pt;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: social-gothic-rough, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-align: center;
 }
 
 /*brødtekst layout*/
-.om .rabat p {
+.om, .rabat, .nyhed p {
     text-align:center;
-    margin-top: 30px;
-    margin-bottom: 50px;
     font-size: 22pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
 }
 
-/*placeringen af læs mere knappen*/
-#læsmere{
-    margin-left: 470px;
-}
 
 .baggrundsfarve{
     background-color: #e6dfd6;
-    margin-top: -5px;
     padding-left: 80px;
+    height: 500px;
 }
 
 /* flexbox til billederne i afsnittet vores cafeer*/
 .vorescafeer{
     display: flex;
     justify-content: space-around;
+    margin-top: 20px;
 }
 
-.baggrundsfarve h2{
+/*layout på "vores cafeer" overskrift*/
+.baggrundsfarve p
+{   padding-top: 30px;
     color: #764207;
-    font-size: 20pt;
-    font-family: 'Nanum Gothic', sans-serif;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-size: 23pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 900;
 }
 
+/*cafe skiltene der går ind over cafe billederne*/
 .skilte{
     margin-left: 13%;
     position:relative;
     bottom:55px;
 }
 
+/*flexbox i studierabat afsnittet*/
 .rabat{
     display: flex;
 }
 
+/*layout på studierabat overskrift*/
 .rabat h1{
     color: #b47e4c;
     font-size: 50pt;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: social-gothic-rough, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     text-align: center; 
 }
 
-#rabatbillede{
-    width: 50%;
-    
-}
-
-#rabattekst{
-    width: 50%;
-}
 
 #studierabat {
     width: 100%;
 }
 
-
-
-footer
-{
-
-    height: 300px;
-    background-color: #764207;
-    font-family: 'Nanum Gothic', sans-serif;
-    color: white;
+.baggrundscolor{
+    background-color: #e6dfd6;
+    height: 350px;
+    align-content: center;
 }
 
-footer section
-{
-    margin-top: 50px;
+.ikoner{
     display: flex;
-    justify-content: space-evenly;
-    gap: 5%;
+    justify-content: center;
+    justify-content: space-around;
 }
 
-footer section div h1
-{
-    font-size: 15pt;
-    color: white;
+.ikoner div a img{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-footer section div p
-
-{
-    line-height:35px;
-    font-size: 14pt;
-    font-weight: lighter;
+.ikoner div div a{
+    color: #764207;
+    font-size: 20pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
 }
 
-#tilmeld
-{
-    line-height:22px;
+
+
+/*flexbox i nyhedsbrev afsnittet*/
+.nyhed{
+    display: flex;
 }
 
-footer img
-{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    gap:20px;
+/*layout på nyhedsbrev overskrift*/
+.nyhed h2{
+    color: #764207;
+    font-size: 38pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+
 }
 
-.mailbox
+
+#nyhedafsnit{
+    margin-top: 40px;
+    margin-left: 240px;
+}
+
+#indtastmail
 {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 10px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.mailbox1
+{
+    padding: 15px;
+    font-size: 15px;
     transition: 0.6s;
-    font-size: 12pt;
-    border-radius: 15px 0px 0px 15px;
+    font-size: 15pt;
+    border-radius: 5px 0px 0px 5px;
     border: none;
     outline: none;
     background-color: #e6dfd6;
-
-    
-
 }
 
-.sendbutton
+
+.sendbutton1
 {
     background-color: #e6dfd6;
-    font-size: 16px;
-    padding: 7px 15px;
-    border-radius: 0px 15px 15px 0px;
+    font-size: 15pt;
+    padding: 15px;
+    border-radius: 0px 5px 5px 0px;
     cursor: pointer;
     text-align: center;
     color: black;
     border: none;
     outline: none;
+
 }
 
 .nyhedsbrevbody
@@ -299,13 +322,13 @@ footer img
 }
 
 .nyhedsbrevbody img
-{   margin-top: 30px;
+{  
+    margin-top: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     align-content: center;
 }
-
 
 
 .emailcontainer
@@ -342,3 +365,221 @@ footer img
     white-space: nowrap;
 }
 
+/*FOOTER*/
+
+footer
+{
+    background-color: #764207;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: white;
+    height: 360px;
+}
+
+footer section
+{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 5%;
+}
+
+
+footer section div h1
+{
+    margin-top: 60px;
+    font-size: 15pt;
+    color: white;
+}
+
+footer section div p
+
+{
+    line-height:35px;
+    font-size: 14pt;
+    font-weight: lighter;
+}
+
+#somelink
+{
+    text-decoration: none;
+    line-height:35px;
+    font-size: 14pt;
+    font-weight: lighter;
+    color: white;
+}
+#tilmeld
+{
+    line-height:22px;
+}
+
+footer img
+{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    gap:20px;
+}
+
+.mailbox
+{
+    width: 200px;
+    height: 40px;
+    display: inline-flex;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 10px;
+    transition: 0.6s;
+    font-size: 12pt;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    outline: none;
+    background-color: #e6dfd6;
+
+}
+
+.sendbutton
+{
+    background-color: #e6dfd6;
+    font-size: 16px;
+    padding: 7px 15px;
+    border-radius: 0px 5px 5px 0px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    border: none;
+    outline: none;
+    width: 70px;
+    height: 40px;
+
+}
+
+.nyhedsbrevbody
+{
+    background: url(images/bønner2.png);
+    background-repeat: no-repeat;
+}
+
+.nyhedsbrevbody img
+{  
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.nyhedsbrevbody h1
+{
+    color: #bb7700;
+    font-size: 30pt;
+    font-family: social-gothic-rough, sans-serif;
+}
+
+.nyhedsbrevbody button
+{
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+}
+
+
+.emailcontainer
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    background-color: #e6dfd6;
+    width: 500px;
+    height: 250px;
+}
+
+
+#tekstmail
+{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #764207;
+}
+
+#tekstmail p
+{
+    font-family:'Dosis', sans-serif;
+    font-size: 15pt;
+    white-space: nowrap;
+}
+
+/*MOBIL RESPONSIVE*/
+@media only screen and (max-width: 530px)
+{
+    header
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navLaptop, .headersome, .headerlogo
+    {
+        display:none; 
+    }
+
+   #navMobile
+   {
+    display: flex;
+    justify-content:right;
+    width: 100%;
+    margin-top: 8px;
+    margin-right: 5px;
+
+   }
+    #headerlogomobil /* Logoet skal være mindre på mobil. */
+    { 
+        margin-left: 10px;
+        width: 100%;
+        padding: 7px;
+
+    }    
+    .footerbokse
+    {  
+        margin-top: -10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerbokse div
+    {
+        align-items: center;
+        gap:40px;
+    }
+    .footerbokse p
+    {
+        margin-top: -10px;
+
+    }
+    .footerbokse h1
+    {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+    .emailcontainer 
+    {
+        width: 20%;
+    }
+
+}
