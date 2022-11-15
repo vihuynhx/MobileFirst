@@ -203,3 +203,31 @@
     .prev, .next,.text {font-size: 11px}
   }
 
+
+/* Graven*/
+
+
+/* CSS til OM OS siden */
+
+.omos h1{
+    color: #bb7700;
+    font-size: 70pt;
+    font-family: social-gothic-rough, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.teksten{
+    display: flex;
+}
+
+.teksten p{
+    text-align:left;
+    font-size: 18pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
