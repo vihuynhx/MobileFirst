@@ -402,7 +402,7 @@
 
 .menucontainer div #beerplease{
     position: relative;
-    margin-right: -70px;
+    margin-right: -80px;
     font-size: 12pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
@@ -412,12 +412,12 @@
 }
 
 .menucontainer div #tomt{
-    margin-left: 85px;
+    margin-left: 95px;
     background-color: #764207;
     color: #764207;
     font-size: 12pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal; 
-    padding-bottom: 15px;
+    padding: 0px 0px 15px 5px;
 }
