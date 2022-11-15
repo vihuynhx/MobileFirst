@@ -50,18 +50,72 @@
     <div>
         <h1>Brammersgade</h1>
         <h3>Street Coffee's første og mindste butik. Om sommeren er gaden drysset med skamler og bænke, så vores dejlige kunder kan nyde en plads i solen - om vinteren klemmer vi os sammen og hygger for fuld udblæsning. </h3>
-        <img class="img_bram_højre" src="images/bram_venstre.jpg" alt="Brammersgade" style="height:350px; width:200px; margin-right: 100px;">
+        <img class="img_bram_højre" src="images/bram_caffee_højre.jpg" alt="Brammersgade" style="height:400px; width:250px; margin-right: 80px; margin-top: 35px;">
         <h2>Adresse</h2>
         <p>Brammersgade 15</p>
-        <img class="img_bram_midt" src="images/bram_venstre.jpg" alt="Brammersgade" style="height:350px; width:200px; margin-right: 100px;">        <h2>Åbningstider</h2>
+        <img class="img_bram_midt" src="images/bram_caffee_midt.jpg" alt="Brammersgade" style="height:400px; width:250px; margin-right: 80px; margin-top: 35px;">        <h2>Åbningstider</h2>
         <p>Mandag-Fredag: 07.30-18.00 <br> Lørdag-Søndag: 08.00-17.00<p>
-        <img class="img_bram_venstre" src="images/bram_venstre.jpg" alt="Brammersgade" style="height:350px; width:200px; margin-right: 100px;">
+        <img class="img_bram_venstre" src="images/bram_venstre.jpg" alt="Brammersgade" style="height:400px; width:250px; margin-right: 80px; margin-top: 35px;">
     </div>
 </section>
 
 <!-- Graven -->
 <section class="bassin_graven">
-    <div></div>
+    <div class="graven_imgs">
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/graven_caffee_1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/graven_caffee_1.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/graven_caffee_1.jpg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+                        
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </div>
     <div class="bassin_graven_content">
         <h1>Graven</h1>
         <h3>Blandt gode restauranter har vi åbnet vores kaffebar op lige overfor "hipsterhøjen". Udover vores sublime kaffe byder vi også på øl på fad og flaske, samt vin og drinks. Det er også her vi holder vores kaffekurser og events.</h3>
