@@ -29,7 +29,7 @@
 
 .bassin_graven h1{
     color: #bb7700;
-    font-size: 30pt;
+    font-size: 40pt;
     font-family: social-gothic-rough, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -37,10 +37,26 @@
 
 .bassin_graven h3{
     margin-top: 5px;
+    font-size: 15pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .bassin_graven h2{
     margin-top: 20px;
+    color: #764207;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bassin_graven p{
+    font-size: 15pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .img_bassin_venstre{
@@ -87,7 +103,7 @@
 
 .vestergade_brammersgade h1{
     color: #bb7700;
-    font-size: 30pt;
+    font-size: 40pt;
     font-family: social-gothic-rough, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -95,10 +111,26 @@
 
 .vestergade_brammersgade h3{
     margin-top: 5px;
+    font-size: 15pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .vestergade_brammersgade h2{
     margin-top: 20px;
+    color: #764207;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.vestergade_brammersgade p{
+    font-size: 15pt; 
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .vestergade_brammersgade img{
@@ -107,6 +139,7 @@
     width:250px; 
     margin-right: 80px; 
     margin-top: 35px;
+    padding-bottom: 90px;
 } 
 
 /* Graven */
