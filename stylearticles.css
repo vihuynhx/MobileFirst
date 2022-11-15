@@ -362,7 +362,8 @@
 
 
 
-/* CSS til MENU siden */
+
+/****** CSS til MENU siden ******/
 
 
 /* Dette bruges for begge menuer */
@@ -393,10 +394,8 @@
 
 
 
-
 /* KAFFE MENU */
 
-/* Billede af kaffekop */
 .coffeemenupic{
     display: flex;
     justify-content: center;
@@ -437,7 +436,6 @@
 
 /* DIVERSE MENU */
 
-/* Billede af croissant */
 .croissantpic{
     display: flex;
     justify-content: center;
@@ -469,4 +467,48 @@
     font-weight: 400;
     font-style: normal; 
     padding: 0px 0px 15px 5px;
+}
+
+
+/* Rabatter og gavekort (4 diver i bunden) */
+
+.rabatter{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+    gap: 100px;
+
+}
+
+.rabatter div{
+    width: 30%;
+    background-color: white;
+}
+
+.rabatter h2{
+    color: #764207;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20pt;
+    position: relative;
+}
+
+.rabat-knap{
+    position: absolute;
+    margin-left: -74px;
+    margin-top: -39px;
+}
+
+.rabatter p{
+    color: #764207;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 16pt;
+    margin-top: 40px;
 }
