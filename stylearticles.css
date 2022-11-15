@@ -7,7 +7,12 @@
 
 /* Stylesheeet til underartikler */ 
 
-/* CSS til cafeerne */
+
+
+
+
+/* CSS til CAFEERNE */
+
 /*CSS til Vestergade*/
 .vestergade{
     display: flex;
@@ -207,6 +212,11 @@
 /* Graven*/
 
 
+
+
+
+
+
 /* CSS til OM OS siden */
 
 .omos h1{
@@ -229,5 +239,68 @@
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+
+
+
+
+
+
+/* CSS til MENU siden */
+
+.coffeemenupic{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f4d19c;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.kaffemenu{
+    display: flex;
+    justify-content: center;
+    background-color: #f4d19c;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.kaffemenu div ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.kaffemenu div ul #brownspot{
+    background-color: #764207;
+    color: #764207;
+    padding-right: 100px;
+}
+
+.kaffemenu div:first-child ul li{
+    padding-right: 100px;
+    background-color: #764207;
+}
+
+.kaffemenu div ul li{
+    font-size: 22pt; 
+    color: #f4d19c;
+    padding: 5px 0px 5px 15px;
+}
+
+.kaffemenu div ul #extras{
+    background-color: #f4d19c;
+    color: #764207;
+}    
+
+.kaffemenu div #prices li{
+    color: #764207;
+    font-weight: 700;
 }
 
