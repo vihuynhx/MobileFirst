@@ -214,15 +214,14 @@
 
 
 
-
-
-
 /* CSS til OM OS siden */
 
+/*flexbox til tekst og billedet på siden*/
 .omos{
     display: flex;
 }
 
+/*layout til overskriften*/
 .vier h1{
     color: #bb7700;
     font-size: 70pt;
@@ -235,26 +234,40 @@
 }
 
 
-
+/*layout til øverste underoverskrifterne*/
 .tekstboks h2{
+    color: #764207;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;*/
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+/*layout til de andre to underoverskrifterne*/
+.omos h3{
     color: #764207;
     font-size: 22pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-align: left;
-    margin-bottom: 10px;
+    padding-top: 40px;
+    
 }
 
+/*layout til brødteksten*/
 .tekstboks p{
     text-align:left;
     font-size: 14pt; 
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 35px;
+    line-height: 38px;
     margin-bottom: 20px;
 }
+
 
 /*boksen med billede og tekst skal fylde 50% hver*/
 .billedeboks 
@@ -273,20 +286,22 @@
 .tekstboks
 {
     width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: 0px;
     margin-left: 50px;
     margin-right: 50px;
 }
 
+/*flexbox til kontakt boksen og boksens farve og størrelse*/
 .kontakt{
     display: flex;
     background-color: #e6dfd6;
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 70px;
+    margin-bottom: 40px;
 
 }
 
+/*layout til overskrifterne i kontakt boksen*/
 .kontakt h2{
     color: #764207;
     font-size: 22pt;
@@ -298,21 +313,20 @@
     padding-left: 30px;
 }
 
-
-
-
+/*layout til brødtekst i kontakt boksen*/
 .kontakt p{
     text-align:left;
     font-size: 14pt; 
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    line-height: 35px;
+    line-height: 40px;
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 20px;
 }
 
+/*sociale medier ikonernes placering og størelse*/
 .billedeboks a img {
     width: auto;
     padding-top: 20px;
@@ -320,11 +334,12 @@
     padding-right: 30px;
 } 
 
+/*flexbox til sociale medier ikonerne*/
 .icons{
     display: flex;
 }
 
-
+/*divernes størrelse som sociale medier ikonerne er i*/
 .divboks{
     height: 55px;
     width: 55px;
