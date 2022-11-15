@@ -332,6 +332,35 @@
 /* CSS til MENU siden */
 
 
+/* Dette bruges for begge menuer */
+.menucontainer{
+    display: flex;
+    justify-content: center;
+    background-color: #f4d19c;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.menucontainer div ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menucontainer div ul #brownspot{
+    background-color: #764207;
+    color: #764207;
+    padding-right: 100px;
+}
+
+
+
+
+
+
 /* KAFFE MENU */
 
 /* Billede af kaffekop */
@@ -346,35 +375,12 @@
     margin-top: 50px;
 }
 
-.kaffemenu{
-    display: flex;
-    justify-content: center;
-    background-color: #f4d19c;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-}
-
-.kaffemenu div ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.kaffemenu div ul #brownspot{
-    background-color: #764207;
-    color: #764207;
-    padding-right: 100px;
-}
-
-.kaffemenu div:first-child ul li{
+.menucontainer #espresso ul li{
     padding-right: 100px;
     background-color: #764207;
 }
 
-.kaffemenu div ul li{
+.menucontainer div ul li{
     font-size: 22pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
@@ -383,12 +389,51 @@
     padding: 5px 0px 5px 15px;
 }
 
-.kaffemenu div ul #extras{
+.menucontainer div ul #extras{
     background-color: #f4d19c;
     color: #764207;
+    font-size: 16pt;
 }    
 
-.kaffemenu div #prices li{
+.menucontainer div #prices li{
     color: #764207;
     font-weight: 700;
+}
+
+
+
+/* DIVERSE MENU */
+
+/* Billede af croissant */
+.croissantpic{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f4d19c;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.menucontainer div #beerplease{
+    position: relative;
+    margin-right: -70px;
+    font-size: 12pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: #764207;
+    padding: 5px 0px 5px 15px;
+}
+
+.menucontainer div #tomt{
+    margin-left: 85px;
+    background-color: #764207;
+    color: #764207;
+    font-size: 12pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding-bottom: 15px;
 }
