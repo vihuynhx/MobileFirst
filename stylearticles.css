@@ -48,8 +48,8 @@
     background-color: #f4d19c;
     height: 600px;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .bassin_graven div{
@@ -123,21 +123,25 @@
     float: right;
 }
 
-
 /* Graven */
+
+.bassin_graven .graven_imgs{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 400px;
     position: relative;
-    margin: 0px;
-    padding: 0px; 
 }
 
 .slideshow-container div{
     width: 300px;
     height: 300px;
-    margin: 0px;
-    padding: 0px; 
+    
 }
 
   /* Next & previous buttons */
@@ -199,6 +203,7 @@
     .prev, .next,.text {font-size: 11px}
   }
 
+
 /* Graven*/
 
 
@@ -225,3 +230,4 @@
     font-weight: 400;
     font-style: normal;
 }
+
