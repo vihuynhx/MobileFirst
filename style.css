@@ -143,8 +143,8 @@ header div{
 {
     width: 100%;
     color: white;
-    font-size: 18pt;
-    font-family: 'Cutive', serif;
+    font-size: 20pt;
+    font-family: myriad-pro, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -182,7 +182,7 @@ header div{
 
 .baggrundsfarve{
     background-color: #e6dfd6;
-    padding-left: 80px;
+    padding-left: 50px;
     height: 500px;
 }
 
@@ -224,28 +224,32 @@ header div{
     text-align: center; 
 }
 
-
+/*billedet ved studierabat afsnittet*/
 #studierabat {
     width: 100%;
 }
 
+/* baggrundsfarven ved ikon afsnittet i main*/
 .baggrundscolor{
     background-color: #e6dfd6;
     height: 350px;
     align-content: center;
 }
 
+/*flexbox til ikonerne*/
 .ikoner{
     display: flex;
     justify-content: center;
     justify-content: space-around;
 }
 
+/*ikonernes placering*/
 .ikoner div a img{
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+/*layout på teksten i ikon afsnittet*/
 .ikoner div div a{
     color: #764207;
     font-size: 20pt;
@@ -260,6 +264,8 @@ header div{
 /*flexbox i nyhedsbrev afsnittet*/
 .nyhed{
     display: flex;
+    margin-right: 135px;
+    white-space: nowrap;
 }
 
 /*layout på nyhedsbrev overskrift*/
@@ -275,7 +281,7 @@ header div{
 
 }
 
-
+/* tilmeld dig nyhedsbrev knappen*/
 #nyhedafsnit{
     margin-top: 40px;
     margin-left: 240px;
@@ -370,9 +376,9 @@ header div{
 footer
 {
     background-color: #764207;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: myriad-pro, sans-serif;
     color: white;
-    height: 360px;
+    height: 300px;
 }
 
 footer section
@@ -542,7 +548,7 @@ footer img
     display: flex;
     justify-content:right;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-right: 5px;
 
    }
@@ -576,10 +582,60 @@ footer img
         text-align: center;
     }
 
-
     .emailcontainer 
     {
         width: 20%;
     }
+
+    .billedeboks img, .billedeboks
+    {
+        display: none;
+    }
+
+    .om
+    {
+        justify-content: center;
+        background-image: url(images/kaffe.jpg);
+        background-size: cover;
+        background-position: center; 
+        background-color: rgba(0, 0, 0, 0.199);
+        height: 500px;
+    }
+
+    .tekstboks h1
+    {   text-align: center;
+        font-size:50pt;
+        white-space: nowrap;
+    }
+
+    .om p
+    {
+        text-align: center;
+        font-size: 12pt;
+        color: white;
+        white-space: nowrap;
+    }
+
+#læsmereboks img
+{
+    width: 70%;
+}
+#læsmereboks span
+{
+    font-size: 14pt;
+}
+
+.baggrundsfarve 
+{
+    text-align: start;
+    height: 500px;
+}
+
+.vorescafeer
+{
+    flex-direction: column;
+    background-color:#e6dfd6 ;
+
+}
 
 }
