@@ -143,8 +143,8 @@ header div{
 {
     width: 100%;
     color: white;
-    font-size: 18pt;
-    font-family: 'Cutive', serif;
+    font-size: 20pt;
+    font-family: myriad-pro, sans-serif;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -376,9 +376,9 @@ header div{
 footer
 {
     background-color: #764207;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: myriad-pro, sans-serif;
     color: white;
-    height: 360px;
+    height: 300px;
 }
 
 footer section
@@ -548,7 +548,7 @@ footer img
     display: flex;
     justify-content:right;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 15px;
     margin-right: 5px;
 
    }
@@ -582,10 +582,60 @@ footer img
         text-align: center;
     }
 
-
     .emailcontainer 
     {
         width: 20%;
     }
+
+    .billedeboks img, .billedeboks
+    {
+        display: none;
+    }
+
+    .om
+    {
+        justify-content: center;
+        background-image: url(images/kaffe.jpg);
+        background-size: cover;
+        background-position: center; 
+        background-color: rgba(0, 0, 0, 0.199);
+        height: 500px;
+    }
+
+    .tekstboks h1
+    {   text-align: center;
+        font-size:50pt;
+        white-space: nowrap;
+    }
+
+    .om p
+    {
+        text-align: center;
+        font-size: 12pt;
+        color: white;
+        white-space: nowrap;
+    }
+
+#læsmereboks img
+{
+    width: 70%;
+}
+#læsmereboks span
+{
+    font-size: 14pt;
+}
+
+.baggrundsfarve 
+{
+    text-align: start;
+    height: 500px;
+}
+
+.vorescafeer
+{
+    flex-direction: column;
+    background-color:#e6dfd6 ;
+
+}
 
 }
