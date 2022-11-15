@@ -178,22 +178,22 @@ header div{
     font-style: normal;
     
 }
-
-
+/*---------------------------------------------/*
+/*
 .baggrundsfarve{
     background-color: #e6dfd6;
     padding-left: 50px;
     height: 500px;
 }
 
-/* flexbox til billederne i afsnittet vores cafeer*/
+/* flexbox til billederne i afsnittet vores cafeer*//*
 .vorescafeer{
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
 }
 
-/*layout på "vores cafeer" overskrift*/
+/*layout på "vores cafeer" overskrift*//*
 .baggrundsfarve p
 {   padding-top: 30px;
     color: #764207;
@@ -202,12 +202,68 @@ header div{
     font-weight: 900;
 }
 
-/*cafe skiltene der går ind over cafe billederne*/
+/*cafe skiltene der går ind over cafe billederne*//*
 .skilte{
     margin-left: 13%;
     position:relative;
     bottom:55px;
 }
+/*
+
+/*---------------------------------------------/* */
+
+
+.vorescafeer, .row1
+{
+    align-items:center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #e6dfd6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:100%
+}
+
+.row1>div
+{
+    width: 20%;
+    height: 400px;
+}
+
+.row1 > div:first-child, #firstpicture
+{
+    
+    max-height:100%;
+    width:100%;
+    width:30%;
+    background: url("images/Vestergadecanva.png");
+
+
+}
+
+.row1 > div:nth-child(2)
+{
+    width:30%;
+    background-image: url("images/Vestergadecanva.png");
+}
+
+.row1 > div:nth-child(3)
+{
+    width:30%;
+
+    background-image: url("images/Vestergadecanva.png");
+}
+
+.row1 > div:nth-child(4)
+{
+    width:30%;
+
+    background-image: url("images/Vestergadecanva.png");
+}
+
 
 /*flexbox i studierabat afsnittet*/
 .rabat{
@@ -625,18 +681,35 @@ footer img
     font-size: 14pt;
 }
 
-.baggrundsfarve 
+
+.row1
 {
-    text-align: start;
     flex-direction: column;
-
+    align-items: center;
+    gap: 15px;
 }
 
-.vorescafeer
+/*fortæller at billedet fortsat skal være 100% selvom screen kommer under 768px*/
+.row1 > div 
 {
-    display: none;
-
+    width: 100%;
 }
+
+.row1 > div:first-child
+{
+    width: 100%;
+}
+
+.row1 > div:nth-child(2)
+{
+    width: 100%;
+}
+
+.row1 > div:nth-child(3)
+{
+    width: 100%;
+}
+
 
 
 }
