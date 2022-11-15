@@ -7,51 +7,13 @@
 
 /* Stylesheeet til underartikler */ 
 
-
-
-
-
 /* CSS til CAFEERNE */
-
-/*CSS til Vestergade*/
-.vestergade{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    height: 500px;
-    width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-top: 40px;
-}
-
-.vestergade div{
-    background-color: white;
-    justify-content: space-around;
-    width: 50%;
-    margin: 20px;
-}
-
-.vestergade h3{
-    margin-top: 5px;
-}
-
-.vestergade h2{
-    margin-top: 20px;
-}
-
-#tre_billeder_fra_højre .img_vestergade_1{
-    background-color: blue;
-    height: 150px;
-    width: 150px;
-}
 
 /*Bassin og graven*/ 
 .bassin_graven{
     display: flex;
     flex-direction: row;
     background-color: #f4d19c;
-    height: 600px;
     width: 100%;
     padding-left: 5%;
     padding-right: 5%;
@@ -74,7 +36,7 @@
 }
 
 .img_bassin_venstre{
-    height: 95%;
+    height: 100%;
     width: 100%;
 }
 
@@ -90,8 +52,15 @@
     text-align: left;
 }
 
-/*Brammersgade*/
-.brammersgade{
+/* Bassin */
+.bassin_lilleimg{
+    height: 130px;
+    width: 130px;
+}
+
+
+/*Vestergade og Brammersgade*/
+.vestergade_brammersgade{
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -101,35 +70,30 @@
     padding-right: 100px;
 }
 
-.brammersgade div{
+.vestergade_brammersgade div{
     background-color: white;
     justify-content: space-around;
     margin-left: 20px;
     margin-top: 50px;
 }
 
-.brammersgade h3{
+.vestergade_brammersgade h3{
     margin-top: 5px;
 }
 
-.brammersgade h2{
+.vestergade_brammersgade h2{
     margin-top: 20px;
 }
 
-.img_bram_højre{
+.vestergade_brammersgade img{
     float: right;
-}
-
-.img_bram_midt{
-    float: right;
-}
-
-.img_bram_venstre{
-    float: right;
-}
+    height:400px; 
+    width:250px; 
+    margin-right: 80px; 
+    margin-top: 35px;
+} 
 
 /* Graven */
-
 .bassin_graven .graven_imgs{
     margin: 0px;
     padding: 0px;
@@ -139,14 +103,14 @@
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 400px;
+    max-width: 100%; 
     position: relative;
 }
 
 .slideshow-container div{
-    width: 300px;
-    height: 300px;
-    
+    width: 100%;
+    height: 100%;
+    margin: 0px;
 }
 
   /* Next & previous buttons */
@@ -164,7 +128,8 @@
     border-radius: 0 3px 3px 0;
     user-select: none;
   }
-  
+ 
+
   /* Position the "next button" to the right */
   .next {
     right: 0;
@@ -350,6 +315,10 @@
 
 /* CSS til MENU siden */
 
+
+/* KAFFE MENU */
+
+/* Billede af kaffekop */
 .coffeemenupic{
     display: flex;
     justify-content: center;
@@ -390,7 +359,10 @@
 }
 
 .kaffemenu div ul li{
-    font-size: 22pt; 
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
     color: #f4d19c;
     padding: 5px 0px 5px 15px;
 }
@@ -404,4 +376,14 @@
     color: #764207;
     font-weight: 700;
 }
+<<<<<<< HEAD
+=======
 
+
+
+
+
+/* DIVERSE MENU */
+
+
+>>>>>>> b2933ebad1df2d43a9e8825a876da12d386b1db1
