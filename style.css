@@ -91,14 +91,14 @@ header div
 /*--------------------------------------------------------------------/*
 
 /*LAPTOP RESPONSIVE*/
-@media screen and (min-width: 530px)
+@media screen and (min-width: 767px)
 {
     /* Skjul mobilmenuen.*/
     #navMobile
     {
         display:none;
     }
-    #headerlogomobil
+    #headerlogomobil, #mobilkvinde
     {
         display:none;
     }
@@ -133,6 +133,7 @@ header div
     margin-bottom: auto;
     
 }
+
 
 .tekstboks a 
 {
@@ -178,7 +179,8 @@ header div
 }
 
 /*brødtekst layout*/
-.om, .rabat, .nyhed p {
+.om, .rabat, .nyhed p 
+{
     text-align:center;
     font-size: 22pt; 
     font-family: myriad-pro, sans-serif;
@@ -194,13 +196,14 @@ header div
 { 
     background-color: #e6dfd6;
 }
+
 .vorescafeer h1
 {
     color: #764207;
-    font-size: 22pt;
+    font-size: 50pt;
     font-family: myriad-pro, sans-serif;
-    font-weight: 900;
-    padding-top: 20px;
+    font-weight: 550;
+    padding-top: 23px;
     padding-left: 35px;
 }
 
@@ -210,7 +213,7 @@ header div
     justify-content: center;
     align-content: center;
     gap:15px;
-    padding: 10px;
+    padding: 30px;
 }
 
 .row1 img
@@ -220,10 +223,12 @@ header div
 
 
 /*------------------STUDIERABAT---------------------------*/
-.rabat{
+.rabat
+{
     margin-top: 50px;
     display: flex;
     background-color: white;
+
 }
 
 /*layout på studierabat overskrift*/
@@ -234,6 +239,45 @@ header div
     font-weight: 700;
     font-style: normal;
     text-align: center; 
+}
+
+#studierabatbillede
+{
+    width: 50%;
+}
+
+#studierabatbillede img
+{
+    width: 100%;
+    display: block;
+}
+
+.rabattekst
+{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.rabattekst a 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.rabattekst a span
+{
+    width: 100%;
+    color: white;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    display: inline-block;
 }
 
 /*---------------TRE LINKS IKONER ------------------------------*/
@@ -275,6 +319,16 @@ header div
 
 /*---------------TIMELD NYHEDSBREV ------------------------------*/
 
+#nyhedsbillede
+{
+    width: 50%;
+}
+
+#nyhedsbillede img
+{
+    width: 100%;
+    display: block;
+}
 
 /*flexbox i nyhedsbrev afsnittet*/
 .nyhed
@@ -494,15 +548,11 @@ footer img
 
 }
 
-
-
-
-
-
+/*---------------------MOBIL RESPONSIVE------------------------------*/
 
 
 /*MOBIL RESPONSIVE*/
-@media only screen and (max-width: 530px)
+@media only screen and (max-width: 767px)
 {
     header
     {
@@ -517,12 +567,11 @@ footer img
 
    #navMobile
    {
-    display: flex;
-    justify-content:right;
-    width: 100%;
-    margin-top: 15px;
-    margin-right: 5px;
-
+        display: flex;
+        justify-content:right;
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 5px;
    }
     #headerlogomobil /* Logoet skal være mindre på mobil. */
     { 
@@ -531,13 +580,10 @@ footer img
         padding: 7px;
 
     }    
-/*
-
-*/
 
     .billedeboks img, .billedeboks
     {
-        display: none;
+        display:none
     }
 
     .om
@@ -565,11 +611,14 @@ footer img
         justify-content: center;
     }
 
+
+
     #læsmereboks img
     {
         width: 70%;
     }
-    #læsmereboks span
+
+    #læsmereboks span,  .rabattekst #læsmere span
     {
         font-size: 16pt;
     }
@@ -581,19 +630,140 @@ footer img
     }
     .row1 img
     {
+        padding-top: 20px;
         max-width: 100%;
     }
 
-    .vorescafeer
-    {
-        padding-top: 25px;
-    }
     .vorescafeer h1
     {
-        font-size: 18pt;
+        font-size: 25pt;
+    }
+    .rabat
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 
+    .rabattekst
+    {
+        background-color: white;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: center;
 
+    }
 
+    .rabattekst h1
+    {
+        text-align: center;
+        font-size:50pt;
+        white-space: nowrap;
 
+    }
+
+    #studierabatbillede, #studierabatbillede img
+    {
+        display: none;
+    }
+
+    #mobilkvinde img
+    {
+        max-width: 100%;
+        display: block;
+    } 
+
+    .ikoner
+    {
+        flex-direction: column;
+    }
+
+    .ikoner img
+    {
+        padding-top: 30px;
+        display: flex;
+        width: 40%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .nyhed
+    {
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+    }
+  
+
+    .nyhedsbillede
+    {
+        display: flex;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .nyhedsbillede img
+    {
+       max-width: 100%;
+    }
+
+    .tekstboks
+    {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .tekstboks h2
+    {
+        font-size: 25pt;
+    }
+
+    .tekstboks p
+    {
+        font-size: 15pt;
+        text-align: center;
+        justify-content: center;
+    }
+    
+
+    #indtastmail
+    {
+        align-items: center;
+        max-width: 100%;
+
+    }
+
+    .footerbokse
+    {  
+        margin-top: -10px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footerbokse div
+    {
+        align-items: center;
+        gap:40px;
+    }
+    .footerbokse p
+    {
+        margin-top: -10px;
+
+    }
+    .footerbokse h1
+    {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .emailcontainer 
+    {
+        width: 20%;
+    }
 }
