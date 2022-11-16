@@ -5,21 +5,24 @@
     padding: 0;
     text-decoration: none;
 }
-
+/*--------------------------------------------------------------------/*
 /*HEADER*/
 
-header{
+header
+{
     background-color: #764207;
     font-family:'Dosis', sans-serif;
     text-transform: uppercase;
 }
 
-header section{
+header section
+{
     display: flex;
     width: 100%;
 }
 
-header div{
+header div
+{
     width: 33%;
 }
 
@@ -33,30 +36,34 @@ header div{
     display: block;
 }
 
-.socialmedia{
+.socialmedia
+{
     text-align: end;
     padding: 15px 40px 0px 0px;
     display: flex;
     justify-content: end;
 }
 
-.socialmedia a{
+.socialmedia a
+{
     font-size: 16pt;
     text-decoration: none;
     color: white;
     margin: 0px 8px;
 }
 
-.headersome .socialmedia #omos{
+.headersome .socialmedia #omos
+{
     padding-top: 9px
 }
 
-.headersome{
+.headersome
+{
     gap: 15px;
 }
 
-
-#navLaptop{
+#navLaptop
+{
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -98,7 +105,6 @@ header div{
 }
 
 /*--------------------------------------------------------------------/*
-
 /* MAIN */
 
 /*øverste del i main*/
@@ -142,7 +148,7 @@ header div{
 {
     width: 100%;
     color: white;
-    font-size: 20pt;
+    font-size: 22pt;
     font-family: myriad-pro, sans-serif;
     position: absolute;
     top: 50%;
@@ -150,7 +156,7 @@ header div{
     -ms-transform: translate(-50%, -70%);
     transform: translate(-50%, -70%);
     display: inline-block;
-}​
+}
 
 #læsmere
 {
@@ -159,13 +165,16 @@ header div{
     display: inline-block;
 }
 /*layout af teksten øverst i main*/
-.om h1{
+
+.om h1
+{
+    display: flex;
     color: #bb7700;
     font-size: 70pt;
     font-family: social-gothic-rough, sans-serif;
     font-weight: 700;
     font-style: normal;
-    text-align: center;
+    justify-content: center;
 }
 
 /*brødtekst layout*/
@@ -177,96 +186,44 @@ header div{
     font-style: normal;
     
 }
-/*---------------------------------------------/*
-/*
-.baggrundsfarve{
+
+/*-----------------------CAFECARDS-----------------------------*/
+
+
+.vorescafeer
+{ 
     background-color: #e6dfd6;
-    padding-left: 50px;
-    height: 500px;
 }
-
-/* flexbox til billederne i afsnittet vores cafeer*//*
-.vorescafeer{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-/*layout på "vores cafeer" overskrift*//*
-.baggrundsfarve p
-{   padding-top: 30px;
+.vorescafeer h1
+{
     color: #764207;
-    font-size: 23pt;
+    font-size: 22pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 900;
+    padding-top: 20px;
+    padding-left: 35px;
 }
 
-/*cafe skiltene der går ind over cafe billederne*//*
-.skilte{
-    margin-left: 13%;
-    position:relative;
-    bottom:55px;
-}
-/*
-
-/*---------------------------------------------/* */
-
-
-.vorescafeer, .row1
+.row1
 {
-    align-items:center;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    gap: 20px;
-    background-color: #e6dfd6;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size:100%
+    justify-content: center;
+    align-content: center;
+    gap:15px;
+    padding: 10px;
 }
 
-.row1>div
+.row1 img
 {
-    width: 20%;
-    height: 400px;
-}
-
-.row1 > div:first-child, #firstpicture
-{
-    
-    max-height:100%;
-    width:100%;
-    width:30%;
-    background: url("images/Vestergadecanva.png");
-
-
-}
-
-.row1 > div:nth-child(2)
-{
-    width:30%;
-    background-image: url("images/Vestergadecanva.png");
-}
-
-.row1 > div:nth-child(3)
-{
-    width:30%;
-
-    background-image: url("images/Vestergadecanva.png");
-}
-
-.row1 > div:nth-child(4)
-{
-    width:30%;
-
-    background-image: url("images/Vestergadecanva.png");
+    width: 100%;
 }
 
 
-/*flexbox i studierabat afsnittet*/
+/*------------------STUDIERABAT---------------------------*/
 .rabat{
+    margin-top: 50px;
     display: flex;
+    background-color: white;
 }
 
 /*layout på studierabat overskrift*/
@@ -279,48 +236,53 @@ header div{
     text-align: center; 
 }
 
-/*billedet ved studierabat afsnittet*/
-#studierabat {
-    width: 100%;
-}
+/*---------------TRE LINKS IKONER ------------------------------*/
 
-/* baggrundsfarven ved ikon afsnittet i main*/
-.baggrundscolor{
-    background-color: #e6dfd6;
-    height: 350px;
-    align-content: center;
-}
-
-/*flexbox til ikonerne*/
-.ikoner{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-/*ikonernes placering*/
-.ikoner div a img{
+.trelinks
+{
     padding-top: 40px;
+    background-color:#e6dfd6;
     padding-bottom: 40px;
 }
 
-/*layout på teksten i ikon afsnittet*/
-.ikoner div div a{
-    color: #764207;
-    font-size: 20pt;
-    font-family: myriad-pro, sans-serif;
-    font-weight: 900;
+/*flexbox til ikonerne*/
+.ikoner
+{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/*ikonernes placering*/
+.ikoner img
+{
+    width: 100%;
+
+}
+
+/*layout på teksten i ikon afsnittet*/
+#shoptekst a
+{   margin-top:5px;
+    display: flex;
+    justify-content: center;
+    color: #764207;
+    font-size: 17pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 900;
 }
 
 
+/*---------------TIMELD NYHEDSBREV ------------------------------*/
+
 
 /*flexbox i nyhedsbrev afsnittet*/
-.nyhed{
+.nyhed
+{
     display: flex;
-    margin-right: 135px;
+    padding-right: 135px;
     white-space: nowrap;
+    background-color: white;
 }
 
 /*layout på nyhedsbrev overskrift*/
@@ -334,12 +296,6 @@ header div{
     margin-bottom: 30px;
     text-align: center;
 
-}
-
-/* tilmeld dig nyhedsbrev knappen*/
-#nyhedafsnit{
-    margin-top: 40px;
-    margin-left: 240px;
 }
 
 #indtastmail
@@ -376,6 +332,9 @@ header div{
 
 }
 
+
+/*-----------------UNDERSIDE NYHEDSBREV----------------------------*/
+
 .nyhedsbrevbody
 {
     background: url(images/bønner2.png);
@@ -391,6 +350,12 @@ header div{
     align-content: center;
 }
 
+.nyhedsbrevbody h1
+{
+    color: #bb7700;
+    font-size: 30pt;
+    font-family: social-gothic-rough, sans-serif;
+}
 
 .emailcontainer
 {
@@ -426,7 +391,22 @@ header div{
     white-space: nowrap;
 }
 
-/*FOOTER*/
+.nyhedsbrevbody button
+{
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 40px;
+}
+
+
+
+/*---------------------FOOTER------------------------------*/
 
 footer
 {
@@ -514,75 +494,12 @@ footer img
 
 }
 
-.nyhedsbrevbody
-{
-    background: url(images/bønner2.png);
-    background-repeat: no-repeat;
-}
-
-.nyhedsbrevbody img
-{  
-    margin-top: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-}
-
-.nyhedsbrevbody h1
-{
-    color: #bb7700;
-    font-size: 30pt;
-    font-family: social-gothic-rough, sans-serif;
-}
-
-.nyhedsbrevbody button
-{
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    color: black;
-    border: none;
-    outline: none;
-    width: 150px;
-    height: 40px;
-}
 
 
-.emailcontainer
-{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border-radius: 30px;
-    background-color: #e6dfd6;
-    width: 500px;
-    height: 250px;
-}
 
 
-#tekstmail
-{
-    text-align: center;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #764207;
-}
 
-#tekstmail p
-{
-    font-family:'Dosis', sans-serif;
-    font-size: 15pt;
-    white-space: nowrap;
-}
+
 
 /*MOBIL RESPONSIVE*/
 @media only screen and (max-width: 530px)
@@ -614,33 +531,9 @@ footer img
         padding: 7px;
 
     }    
-    .footerbokse
-    {  
-        margin-top: -10px;
-        flex-direction: column;
-        text-align: center;
-    }
+/*
 
-    .footerbokse div
-    {
-        align-items: center;
-        gap:40px;
-    }
-    .footerbokse p
-    {
-        margin-top: -10px;
-
-    }
-    .footerbokse h1
-    {
-        margin-top: 30px;
-        text-align: center;
-    }
-
-    .emailcontainer 
-    {
-        width: 20%;
-    }
+*/
 
     .billedeboks img, .billedeboks
     {
@@ -665,49 +558,41 @@ footer img
 
     .om p
     {
-        text-align: center;
-        font-size: 12pt;
+        display: flex;
+        font-size: 15pt;
         color: white;
         white-space: nowrap;
+        justify-content: center;
     }
 
-#læsmereboks img
-{
-    width: 70%;
-}
-#læsmereboks span
-{
-    font-size: 14pt;
-}
+    #læsmereboks img
+    {
+        width: 70%;
+    }
+    #læsmereboks span
+    {
+        font-size: 16pt;
+    }
 
+    .row1
+    { 
+        flex-direction: column;
+        justify-content: center;
+    }
+    .row1 img
+    {
+        max-width: 100%;
+    }
 
-.row1
-{
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
+    .vorescafeer
+    {
+        padding-top: 25px;
+    }
+    .vorescafeer h1
+    {
+        font-size: 18pt;
+    }
 
-/*fortæller at billedet fortsat skal være 100% selvom screen kommer under 768px*/
-.row1 > div 
-{
-    width: 100%;
-}
-
-.row1 > div:first-child
-{
-    width: 100%;
-}
-
-.row1 > div:nth-child(2)
-{
-    width: 100%;
-}
-
-.row1 > div:nth-child(3)
-{
-    width: 100%;
-}
 
 
 
