@@ -360,7 +360,49 @@
 }
 
 
+/*MOBIL RESPONSIVE til "OM OS" siden*/
+@media only screen and (max-width: 767px)
+{
+    
+    .vier h1{
+        font-size: 40pt;
+    }
 
+    .tekstboks{
+        width: 90%;
+    }
+
+    .billedeboks{
+        display: block;
+        
+    }
+
+    .billedeboks img{
+        width: 200%;
+    }
+
+    .omos{
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .kontakt{
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+
+    .kontakt, .divboks{
+        width: 200%;
+    }
+
+    .icons .divboks #insta img{
+        margin-left: -70px;
+    }
+
+    .icons{
+        padding-bottom: 20px;
+    }
+}
 
 
 /*----------------------------- CSS til MENU siden ---------------------------*/

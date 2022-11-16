@@ -91,17 +91,27 @@ header div
 /*--------------------------------------------------------------------/*
 
 /*LAPTOP RESPONSIVE*/
-@media screen and (min-width: 530px)
+@media screen and (min-width: 767px)
 {
     /* Skjul mobilmenuen.*/
     #navMobile
     {
         display:none;
     }
-    #headerlogomobil
+    #headerlogomobil, #mobilkvinde
     {
         display:none;
     }
+
+    .vorescafeer h1
+{
+    color: #764207;
+    font-size: 50pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 550;
+    padding-left: 35px;
+    padding-top: 60px;
+}
 }
 
 /*--------------------------------------------------------------------/*
@@ -133,6 +143,7 @@ header div
     margin-bottom: auto;
     
 }
+
 
 .tekstboks a 
 {
@@ -178,7 +189,8 @@ header div
 }
 
 /*brødtekst layout*/
-.om, .rabat, .nyhed p {
+.om, .rabat, .nyhed p 
+{
     text-align:center;
     font-size: 22pt; 
     font-family: myriad-pro, sans-serif;
@@ -194,15 +206,8 @@ header div
 { 
     background-color: #e6dfd6;
 }
-.vorescafeer h1
-{
-    color: #764207;
-    font-size: 22pt;
-    font-family: myriad-pro, sans-serif;
-    font-weight: 900;
-    padding-top: 20px;
-    padding-left: 35px;
-}
+
+
 
 .row1
 {
@@ -210,7 +215,8 @@ header div
     justify-content: center;
     align-content: center;
     gap:15px;
-    padding: 10px;
+    padding:15px;
+
 }
 
 .row1 img
@@ -220,10 +226,12 @@ header div
 
 
 /*------------------STUDIERABAT---------------------------*/
-.rabat{
+.rabat
+{
     margin-top: 50px;
     display: flex;
     background-color: white;
+
 }
 
 /*layout på studierabat overskrift*/
@@ -234,6 +242,45 @@ header div
     font-weight: 700;
     font-style: normal;
     text-align: center; 
+}
+
+#studierabatbillede
+{
+    width: 50%;
+}
+
+#studierabatbillede img
+{
+    width: 100%;
+    display: block;
+}
+
+.rabattekst
+{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+}
+
+.rabattekst a 
+{
+    position: relative;
+    display: inline-block;
+}
+
+.rabattekst a span
+{
+    width: 100%;
+    color: white;
+    font-size: 22pt;
+    font-family: myriad-pro, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -70%);
+    transform: translate(-50%, -70%);
+    display: inline-block;
 }
 
 /*---------------TRE LINKS IKONER ------------------------------*/
@@ -275,6 +322,16 @@ header div
 
 /*---------------TIMELD NYHEDSBREV ------------------------------*/
 
+#nyhedsbillede
+{
+    width: 50%;
+}
+
+#nyhedsbillede img
+{
+    width: 100%;
+    display: block;
+}
 
 /*flexbox i nyhedsbrev afsnittet*/
 .nyhed
@@ -494,15 +551,11 @@ footer img
 
 }
 
-
-
-
-
-
+/*---------------------MOBIL RESPONSIVE------------------------------*/
 
 
 /*MOBIL RESPONSIVE*/
-@media only screen and (max-width: 530px)
+@media only screen and (max-width: 767px)
 {
     header
     {
@@ -517,12 +570,11 @@ footer img
 
    #navMobile
    {
-    display: flex;
-    justify-content:right;
-    width: 100%;
-    margin-top: 15px;
-    margin-right: 5px;
-
+        display: flex;
+        justify-content:right;
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 5px;
    }
     #headerlogomobil /* Logoet skal være mindre på mobil. */
     { 
@@ -531,13 +583,10 @@ footer img
         padding: 7px;
 
     }    
-/*
-
-*/
 
     .billedeboks img, .billedeboks
     {
-        display: none;
+        display:none
     }
 
     .om
@@ -569,7 +618,8 @@ footer img
     {
         width: 70%;
     }
-    #læsmereboks span
+
+    #læsmereboks span,  .rabattekst #læsmere span
     {
         font-size: 16pt;
     }
@@ -578,22 +628,175 @@ footer img
     { 
         flex-direction: column;
         justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
     }
     .row1 img
     {
+        padding-top: 20px;
         max-width: 100%;
     }
 
-    .vorescafeer
-    {
-        padding-top: 25px;
-    }
+
     .vorescafeer h1
+{
+    padding-top: 25px;
+    color: #764207;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 550;
+    font-size: 25pt;
+    text-align: center
+}
+
+/*----------STUDIERABAT---------*/
+
+    .rabat
     {
-        font-size: 18pt;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 
+    .rabattekst
+    {
+        background-color: white;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        justify-content: center;
+
+    }
+
+    .rabattekst h1
+    {
+        text-align: center;
+        font-size:50pt;
+        white-space: nowrap;
+        color: #b47e4c;
+        font-family: social-gothic-rough, sans-serif;
+        font-weight: 700;
+
+    }
+
+    #studierabatbillede, #studierabatbillede img
+    {
+        display: none;
+    }
+
+    #mobilkvinde img
+    {
+        max-width: 100%;
+        display: block;
+    } 
+
+    .ikoner
+    {
+        flex-direction: column;
+    }
+
+    .ikoner img
+    {
+        padding-top: 30px;
+        display: flex;
+        width: 40%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+/*----------NYHED---------*/
 
 
+    .nyhed
+    {
+        flex-direction: column;
+        background-color: white;
+        padding: 0;
+        padding-bottom: 70px;
+
+    }
+  
+
+    .nyhedsbillede
+    {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+    }
+    .nyhedsbillede img
+    {
+       max-width: 100%;
+    }
+   
+    .tekstboks
+    {
+        text-align: center;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .tekstboks h2
+    {
+        font-size: 25pt;
+    }
+
+    .tekstboks p
+    {
+        font-size: 15pt;
+        text-align: center;
+        justify-content: center;
+    }
+    
+
+    #indtastmail
+    {
+        align-items: center;
+        max-width: 100%;
+
+    }
+/*----------FOOTER---------*/
+
+    .footerbokse
+    {  
+        margin-top: -15px;
+        flex-direction: column;
+        text-align: center;
+        background-color: #764207;
+        padding-bottom: 20px;
+    }
+
+    .footerbokse div
+    {
+        align-items: center;
+        gap:40px;
+    }
+    .footerbokse p
+    {
+        margin-top: -10px;
+
+    }
+    .footerbokse h1
+    {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .emailcontainer 
+    {
+        width: 20%;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px ) 
+{
 
 }
+
