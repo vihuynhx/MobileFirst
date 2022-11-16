@@ -555,7 +555,7 @@
 
 /* RESPONSIVE DESIGN TIL MOBIL FOR MENU-SIDEN */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 615px){
     .menucontainer{
         width: 90%;
     }
