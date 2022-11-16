@@ -102,6 +102,16 @@ header div
     {
         display:none;
     }
+
+    .vorescafeer h1
+{
+    color: #764207;
+    font-size: 50pt;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 550;
+    padding-left: 35px;
+    padding-top: 60px;
+}
 }
 
 /*--------------------------------------------------------------------/*
@@ -197,15 +207,7 @@ header div
     background-color: #e6dfd6;
 }
 
-.vorescafeer h1
-{
-    color: #764207;
-    font-size: 50pt;
-    font-family: myriad-pro, sans-serif;
-    font-weight: 550;
-    padding-top: 23px;
-    padding-left: 35px;
-}
+
 
 .row1
 {
@@ -213,7 +215,8 @@ header div
     justify-content: center;
     align-content: center;
     gap:15px;
-    padding: 30px;
+    padding:15px;
+
 }
 
 .row1 img
@@ -611,8 +614,6 @@ footer img
         justify-content: center;
     }
 
-
-
     #læsmereboks img
     {
         width: 70%;
@@ -627,6 +628,9 @@ footer img
     { 
         flex-direction: column;
         justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
     }
     .row1 img
     {
@@ -634,10 +638,19 @@ footer img
         max-width: 100%;
     }
 
+
     .vorescafeer h1
-    {
-        font-size: 25pt;
-    }
+{
+    padding-top: 25px;
+    color: #764207;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 550;
+    font-size: 25pt;
+    text-align: center
+}
+
+/*----------STUDIERABAT---------*/
+
     .rabat
     {
         flex-direction: column;
@@ -661,6 +674,9 @@ footer img
         text-align: center;
         font-size:50pt;
         white-space: nowrap;
+        color: #b47e4c;
+        font-family: social-gothic-rough, sans-serif;
+        font-weight: 700;
 
     }
 
@@ -690,33 +706,39 @@ footer img
         margin-right: auto;
     } 
 
+/*----------NYHED---------*/
+
+
     .nyhed
     {
         flex-direction: column;
-        max-width: 100%;
+        background-color: white;
         padding: 0;
+        padding-bottom: 70px;
+
     }
   
 
     .nyhedsbillede
     {
         display: flex;
-        max-width: 100%;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
         align-content: center;
     }
-
     .nyhedsbillede img
     {
        max-width: 100%;
     }
-
+   
     .tekstboks
     {
         text-align: center;
         justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
     }
 
     .tekstboks h2
@@ -738,12 +760,15 @@ footer img
         max-width: 100%;
 
     }
+/*----------FOOTER---------*/
 
     .footerbokse
     {  
-        margin-top: -10px;
+        margin-top: -15px;
         flex-direction: column;
         text-align: center;
+        background-color: #764207;
+        padding-bottom: 20px;
     }
 
     .footerbokse div
@@ -758,7 +783,7 @@ footer img
     }
     .footerbokse h1
     {
-        margin-top: 30px;
+        margin-top: 50px;
         text-align: center;
     }
 
@@ -767,3 +792,11 @@ footer img
         width: 20%;
     }
 }
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px ) 
+{
+
+}
+
