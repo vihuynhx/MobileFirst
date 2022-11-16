@@ -7,7 +7,7 @@
 
 /* Stylesheeet til underartikler */ 
 
-/* CSS til CAFEERNE */
+/*------------------------ CSS til CAFEERNE ------------------------*/
 
 /*Bassin og graven*/ 
 .bassin_graven{
@@ -228,7 +228,7 @@
 
 
 
-/* CSS til OM OS siden */
+/*------------------------ CSS til OM OS siden ------------------------*/
 
 /*flexbox til tekst og billedet på siden*/
 .omos{
@@ -363,7 +363,7 @@
 
 
 
-/****** CSS til MENU siden ******/
+/*----------------------------- CSS til MENU siden ---------------------------*/
 
 
 /* Dette bruges for begge menuer */
@@ -389,9 +389,6 @@
     color: #764207;
     padding-right: 100px;
 }
-
-
-
 
 
 /* KAFFE MENU */
@@ -511,4 +508,39 @@
     font-style: normal; 
     font-size: 16pt;
     margin-top: 40px;
+}
+
+
+/* RESPONSIVE DESIGN TIL MOBIL FOR MENU-SIDEN */
+
+@media screen and (max-width: 768px){
+    .menucontainer{
+        width: 90%;
+    }
+
+    .coffeemenupic, .croissantpic{
+        width: 90%;
+    }
+
+    .menucontainer #espresso ul li{
+        padding-right: 70px;
+    }
+
+    .menucontainer #beerplease br{
+        display: none;
+    }
+
+    .rabatter div{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .rabat-knap{
+        margin-left: -140px;
+    }
+
+
+
 }
