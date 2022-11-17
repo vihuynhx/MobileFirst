@@ -446,6 +446,53 @@
     }
 }
 
+/*TABLET RESPONSIVE til "OM OS" siden*/
+@media only screen and (min-width: 651px) 
+and (max-width: 1023px)
+{
+    .vier h1{
+        font-size: 50pt;
+    }
+
+    .omos > .boks{
+        width: 90%;
+    }
+
+    .billedeboks{
+        display: block;
+        
+    }
+
+    .billedeboks img{
+        width: 200%;
+    }
+
+
+    .omos{
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .kontakt{
+        width: 80%;
+        margin: 0px;
+        
+    }
+
+    .kontakt, .divboks{
+        width: 200%;
+    }
+
+    .icons .divboks #insta img{
+        margin-left: -50px;
+    }
+
+    .icons{
+        padding-bottom: 20px;
+    }
+}
 
 /*----------------------------- CSS til MENU siden ---------------------------*/
 
