@@ -555,7 +555,7 @@
 
 /* RESPONSIVE DESIGN TIL MOBIL FOR MENU-SIDEN */
 
-@media screen and (max-width: 615px){
+@media screen and (max-width: 650px){
     .menucontainer{
         width: 90%;
     }
@@ -582,7 +582,6 @@
     .rabat-knap{
         margin-left: -140px;
     }
-
 
 
 }
