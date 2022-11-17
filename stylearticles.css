@@ -25,6 +25,7 @@
     margin: 50px;
     margin-left: 20px;
     width: 50%;
+
 }
 
 .bassin_graven h1{
@@ -60,8 +61,9 @@
 }
 
 .img_bassin_venstre{
-    height: 100%;
-    width: 100%;
+    display: block;
+    height: auto;
+    width: auto;
 }
 
 .bassin_graven_content img{
@@ -92,6 +94,7 @@
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 20px;
 }
 
 .vestergade_brammersgade div{
@@ -134,34 +137,109 @@
     font-style: normal;
 }
 
-@media only screen and (min-width: 767px) 
+.vestergade_brammersgade_3img{
+    display: flex;
+    flex-direction: row;
+}
+
+.vest_bram_højre{
+    margin-top: -50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vest_bram_midt{
+    margin-top: -170px;
+} 
+
+.vest_bram_venstre{
+    margin-top: -240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vest_bram_midt, .vest_bram_venstre, .vest_bram_højre
+    {
+        display: flex; 
+        height: auto;
+        max-width: 100%;
+    }
+
+#mobilbram{
+    display: none;
+}
+
+/* Responsive til Ipad */ 
+@media only screen and (min-width: 651px) and (max-width:1023px)
 {
     .vestergade_brammersgade_3img
     {
+        display: flex; 
+        height: auto;
+        width: 100%; 
+    }
+
+    .vestergade_brammersgade_3img div{
         display: flex;
-        
+        width: 50%;
     }
-    
-    .vest_bram_højre{
-        margin-top: -50px;
+
+    .vest_bram_midt, .vest_bram_højre
+    {
+        display: flex; 
+        height: auto;
+        max-width: 100%;
+    }
+
+    #vest_img_ipad, #bram_img_ipad{
+        display: none;
+    }
+
+    #mobilbram{
+        display: none;
+    }
+
+    .bassin_graven
+    {
+        flex-direction: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .img_bassin_venstre{
         display: block;
-        margin-left: auto;
-        margin-right: auto;
+        height: auto;
+        width: 100%;
+        padding: 10%;
+        padding-top: 0px;
+    }
+
+    .bassin_graven div
+    {  
+        width: 100%;
+    }
+
+    .graven_imgs{
+        max-width: 500px;
+    }
+
+    #bas_imgvenstre_ipad, .graven_imgs{
+        padding-left: 15%;
+        padding-right: 15%;
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     
-    .vest_bram_midt{
-        margin-top: -170px;
-    }
-    
-    .vest_bram_venstre{
-        margin-top: -250px;
-        margin-bottom: 20px;
-    }
+
 }
 
 
 
-@media only screen and (max-width: 767px) 
+/*  responsive til telefon */ 
+@media only screen and (max-width: 650px) 
 {
     .vestergade_brammersgade 
     {
@@ -169,11 +247,19 @@
         height: 100%;
     }
 
-    .vest_bram_venstre, .vest_bram_midt
+    .vestergade_brammersgade_3img
     {
         display: none;
     }
 
+    #mobilbram{
+        display: flex;
+   }
+
+   .vest_bram_højre, .vest_bram_midt{
+        margin-top: auto;
+    
+   }
 
     .bassin_graven
     {
@@ -181,30 +267,58 @@
         width: 100%;
     }
 
-    .bassin_graven div 
+    .bassin_graven div, .graven_imgs
     {
         width: 80%;
     }
+
+    .img_bassin_venstre{
+        display: block;
+        justify-content: center;
+        height: auto;
+        width: 100%;
+    }
+
+    .slideshow-container{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
 }
+
 
 /* Graven */
 .bassin_graven .graven_imgs{
     margin: 0px;
     padding: 0px;
     width: 100%;
+    height: 100%;    
 }
+
 
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 100%; 
+    max-width: 600px; 
+    width: 100%;
     position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .slideshow-container div{
-    width: 100%;
-    height: 100%;
     margin: 0px;
+    display: flex; 
+    height: auto;
+    width: 100%; 
+}
+
+.slideshow-container div img{
+    display: flex; 
+    height: auto;
+    width: 100%; 
 }
 
   /* Next & previous buttons */
@@ -290,7 +404,7 @@
 
 
 /*layout til øverste underoverskrifterne*/
-.tekstboks h2{
+.boks h2{
     color: #764207;
     font-size: 22pt;
     font-family: myriad-pro, sans-serif;
@@ -309,11 +423,11 @@
     font-style: normal;
     text-align: left;
     padding-top: 40px;
-    
+    margin-bottom: 10px;
 }
 
 /*layout til brødteksten*/
-.tekstboks p{
+.boks p{
     text-align:left;
     font-size: 14pt; 
     font-family: myriad-pro, sans-serif;
@@ -338,7 +452,7 @@
 }
 
 /*placeringen af teksten øverst i main*/
-.tekstboks
+.boks
 {
     width: 50%;
     margin-top: 0px;
@@ -409,7 +523,7 @@
         font-size: 40pt;
     }
 
-    .tekstboks{
+    .omos > .boks{
         width: 90%;
     }
 
@@ -424,11 +538,12 @@
 
     .omos{
         flex-wrap: wrap;
+        max-width: 100%;
         margin: 0px;
+        padding: 0px;
     }
 
     .kontakt{
-        flex-wrap: wrap;
         margin: 0px;
     }
 
@@ -437,7 +552,7 @@
     }
 
     .icons .divboks #insta img{
-        margin-left: -70px;
+        margin-left: -50px;
     }
 
     .icons{
@@ -445,6 +560,53 @@
     }
 }
 
+/*TABLET RESPONSIVE til "OM OS" siden*/
+@media only screen and (min-width: 651px) 
+and (max-width: 1023px)
+{
+    .vier h1{
+        font-size: 50pt;
+    }
+
+    .omos > .boks{
+        width: 90%;
+    }
+
+    .billedeboks{
+        display: block;
+        
+    }
+
+    .billedeboks img{
+        width: 200%;
+    }
+
+
+    .omos{
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .kontakt{
+        width: 80%;
+        margin: 0px;
+        
+    }
+
+    .kontakt, .divboks{
+        width: 200%;
+    }
+
+    .icons .divboks #insta img{
+        margin-left: -50px;
+    }
+
+    .icons{
+        padding-bottom: 20px;
+    }
+}
 
 /*----------------------------- CSS til MENU siden ---------------------------*/
 
