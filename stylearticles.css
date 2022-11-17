@@ -21,11 +21,8 @@
 
 .bassin_graven div{
     background-color: #f4d19c;
-    justify-content: space-around;
     margin: 50px;
-    margin-left: 20px;
     width: 50%;
-
 }
 
 .bassin_graven h1{
@@ -60,10 +57,17 @@
     font-style: normal;
 }
 
-.img_bassin_venstre{
+.bassin_graven #bas_imgvenstre_ipad{
+    padding-top: auto;
+    padding-bottom: auto;
     display: block;
-    height: auto;
-    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bassin_venstre{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .bassin_graven_content img{
@@ -75,7 +79,7 @@
 }
 
 .bassin_graven_content h3 {
-    text-align: left;
+    text-align: center;
 }
 
 /* Bassin */
@@ -94,12 +98,11 @@
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
 }
 
 .vestergade_brammersgade div{
     background-color: white;
-    margin-left: 3%;
     margin-top: 5%;
     height: 100%;
     width: 100%;
@@ -140,6 +143,19 @@
 .vestergade_brammersgade_3img{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.vestergade_brammersgade_3img div{
+    max-width: 30%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.vestergade_brammersgade_3img div img{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .vest_bram_højre{
@@ -150,11 +166,13 @@
 }
 
 .vest_bram_midt{
-    margin-top: -170px;
+    margin-top: -150px;
+    margin-left: auto;
+    margin-right: auto;
 } 
 
 .vest_bram_venstre{
-    margin-top: -240px;
+    margin-top: -250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -164,7 +182,6 @@
     {
         display: flex; 
         height: auto;
-        max-width: 100%;
     }
 
 #mobilbram{
@@ -183,7 +200,7 @@
 
     .vestergade_brammersgade_3img div{
         display: flex;
-        width: 50%;
+        max-width: 50%;
     }
 
     .vest_bram_midt, .vest_bram_højre
@@ -245,6 +262,7 @@
     {
         flex-direction: column;
         height: 100%;
+        text-align: center;
     }
 
     .vestergade_brammersgade_3img

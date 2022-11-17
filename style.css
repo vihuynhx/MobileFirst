@@ -73,7 +73,8 @@ header div
     padding-bottom: 10px;
 }
 
-#navLaptop a{
+#navLaptop a
+{
     text-decoration: none;
     color:white;    
 }
@@ -151,15 +152,18 @@ header div
         display:none;
     }
 
-    .vorescafeer h1
-{
-    color: #764207;
-    font-size: 50pt;
-    font-family: myriad-pro, sans-serif;
-    font-weight: 550;
-    padding-left: 35px;
-    padding-top: 60px;
-}
+    .om h1
+    {
+        display: flex;
+        color: #bb7700;
+        font-size: 7vw;
+        font-family: social-gothic-rough, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
 }
 
 /*--------------------------------------------------------------------/*
@@ -201,8 +205,19 @@ header div
     margin-top: 20px;
 }
 
+.om h1
+{
+    display: flex;
+    color: #bb7700;
+    font-size: 7vw;
+    font-family: social-gothic-rough, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+    white-space: nowrap;
+}
 
-.tekstboks a span
+.tekstboks a span, .rabattekst a span
 {
     width: 100%;
     color: white;
@@ -224,16 +239,6 @@ header div
 }
 /*layout af teksten øverst i main*/
 
-.om h1
-{
-    display: flex;
-    color: #bb7700;
-    font-size: 70pt;
-    font-family: social-gothic-rough, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    justify-content: center;
-}
 
 /*brødtekst layout*/
 .om, .rabat, .nyhed p 
@@ -243,7 +248,6 @@ header div
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
-    
 }
 
 /*-----------------------CAFECARDS-----------------------------*/
@@ -254,7 +258,15 @@ header div
     background-color: #e6dfd6;
 }
 
-
+.vorescafeer h1
+{
+    color: #764207;
+    font-size: 3.7vw;
+    font-family: myriad-pro, sans-serif;
+    font-weight: 550;
+    padding-top: 20px;
+    padding-left: 35px;
+}
 
 .row1
 {
@@ -289,7 +301,7 @@ header div
 /*layout på studierabat overskrift*/
 .rabat h1{
     color: #b47e4c;
-    font-size: 50pt;
+    font-size: 7vw;
     font-family: social-gothic-rough, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -321,27 +333,14 @@ header div
     display: inline-block;
 }
 
-.rabattekst a span
-{
-    width: 100%;
-    color: white;
-    font-size: 22pt;
-    font-family: myriad-pro, sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -70%);
-    transform: translate(-50%, -70%);
-    display: inline-block;
-}
 
 /*---------------TRE LINKS IKONER ------------------------------*/
 
 .trelinks
 {
-    padding-top: 40px;
+    padding-top: 60px;
     background-color:#e6dfd6;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 /*flexbox til ikonerne*/
@@ -356,20 +355,26 @@ header div
 /*ikonernes placering*/
 .ikoner img
 {
-    width: 100%;
+    width: 110%;
 
 }
 
 
 /*layout på teksten i ikon afsnittet*/
 #shoptekst a
-{   margin-top:5px;
-    display: flex;
-    justify-content: center;
+{   
+    margin-top:5px;
     color: #764207;
     font-size: 17pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 900;
+   display: flex;
+   justify-content: center;
+}
+
+#besogshop
+{
+    margin-left: 20px;
 }
 
 
@@ -379,6 +384,9 @@ header div
 {
     display: flex;
     background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 .nyhedsbillede
@@ -393,7 +401,7 @@ header div
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     margin-top:  auto;
     margin-bottom: auto;
     
@@ -521,22 +529,19 @@ header div
     height: 40px;
 }
 
-
-
 /*---------------------FOOTER------------------------------*/
-
 footer
 {
     background-color: #764207;
     font-family: myriad-pro, sans-serif;
     color: white;
-    height: 300px;
+    padding-bottom: 70px;
+    padding-top: 20px;
 }
 
 footer section
 {
     display: flex;
-    margin-top: 30px;
     justify-content: space-evenly;
     flex-direction: row;
     gap: 5%;
@@ -546,29 +551,31 @@ footer section
 footer section div h1
 {
     margin-top: 60px;
-    font-size: 15pt;
+    font-size: 17pt;
     color: white;
+    white-space:nowrap;
 }
 
 footer section div p
-
 {
-    line-height:35px;
-    font-size: 14pt;
+    line-height:45px;
+    font-size: 1.5vw;
     font-weight: lighter;
+    white-space: nowrap;
 }
 
 #somelink
 {
     text-decoration: none;
-    line-height:35px;
-    font-size: 14pt;
+    line-height:50px;
+    font-size: 1.5vw;
     font-weight: lighter;
     color: white;
 }
+
 #tilmeld
 {
-    line-height:22px;
+    line-height:30px;
 }
 
 footer img
@@ -640,7 +647,7 @@ footer img
         margin-top: 15px;
         margin-right: 5px;
    }
-    #headerlogomobil /* Logoet skal være mindre på mobil. */
+    #headerlogomobil 
     { 
         margin-left: 10px;
         width: 100%;
@@ -667,17 +674,18 @@ footer img
 
     .tekstboks h1
     {   text-align: center;
-        font-size:50pt;
+        font-size:55pt;
         white-space: nowrap;
     }
 
-    .om p
+    .om .tekstboks p
     {
         display: flex;
-        font-size: 15pt;
+        font-size: 17pt;
         color: white;
-        /*white-space: nowrap;*/
         justify-content: center;
+        white-space: nowrap;
+
     }
 
     #læsmereboks img
@@ -687,7 +695,7 @@ footer img
 
     #læsmereboks span,  .rabattekst #læsmere span
     {
-        font-size: 16pt;
+        font-size: 20pt;
     }
 /*----------------CARDS-------------------*/
     .row1
@@ -700,18 +708,18 @@ footer img
     }
     .row1 img
     {
-        padding-top: 20px;
+        padding-top: 18px;
         max-width: 100%;
     }
 
 
     .vorescafeer h1
     {
-        padding-top: 25px;
+        padding-top: 35px;
         color: #764207;
         font-family: myriad-pro, sans-serif;
         font-weight: 550;
-        font-size: 25pt;
+        font-size: 7vw;
         text-align: center
     }
 
@@ -736,13 +744,13 @@ footer img
         padding-bottom: 60px;
         justify-content: center;
         margin: auto;
-
+        font-size: 22pt;
     }
 
     .rabattekst h1
     {
         text-align: center;
-        font-size:50pt;
+        font-size:55pt;
         color: #b47e4c;
         font-family: social-gothic-rough, sans-serif;
         font-weight: 700;
@@ -760,6 +768,7 @@ footer img
         height: auto;
         margin: 0;
         padding: 0;
+
     }
 
     .rabat #mobilkvinde img
@@ -771,6 +780,8 @@ footer img
         display: block;
         object-fit: contain;
     } 
+
+    /*-------------IKONER--------------*/
 
     .ikoner
     {
@@ -785,7 +796,13 @@ footer img
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 10px;
     } 
+
+    #shoptekst a
+    {
+        font-size: 5vw;
+    }
 
 /*----------NYHED---------*/
 
@@ -793,7 +810,7 @@ footer img
     .nyhed
     {
         padding-top: 70px;
-        padding-bottom: 70px;
+        padding-bottom: 40px;
     }
   
     .nyhedsbillede
@@ -810,7 +827,7 @@ footer img
 
     .nyhed .tekstboks h2
     {
-        font-size: 25pt;
+        font-size: 7vw;
         white-space: nowrap;
         text-align: center;
         justify-content: center;
@@ -820,8 +837,8 @@ footer img
 
     .nyhed .tekstboks p
     {
-        padding: 10px;
-        font-size: 15pt;
+        padding: 15px;
+        font-size: 5vw;
         text-align: center;
         justify-content: center;
         /*tekst fylder to linjer*/
@@ -851,6 +868,17 @@ footer img
         font-size: 15pt;
         padding: 15px;
     }
+
+    #mobilnyhed
+    {
+        max-width: 100%;
+    }
+
+    #mobilnyhed img
+    {
+        padding-top: 30px;
+        width: 80%;
+    }
     
 /*----------FOOTER---------*/
 
@@ -869,9 +897,11 @@ footer img
         align-items: center;
         gap:40px;
     }
-    .footerbokse p
+    .footerbokse p, #somelink
+
     {
         margin-top: -10px;
+        font-size: 3.5vw;
 
     }
     .footerbokse h1
@@ -880,28 +910,39 @@ footer img
         text-align: center;
     }
 
-    .emailcontainer 
-    {
-        width: 20%;
-    }
 
     #mobilnyhed
     {
         max-width: 100%;
         padding: 20px;
     }
+
+    #indtastmail
+    {
+        white-space: nowrap;
+    }
+
+ 
 }
 
 
 
 @media only screen and (min-width: 651px) and (max-width: 1023px ) 
 {
+/*---------------HEADER-----------------*/
+
+    #navLaptop
+    {
+        max-width: 100%;
+        font-size: 20pt;
+    }
 
     .socialmedia
     {
         white-space:nowrap;
     }
 
+/*---------------KAFFE-----------------*/
 
     .tekstboks h1
     {
@@ -918,18 +959,19 @@ footer img
 
     .tekstboks a span
     {
-        font-size: 18pt;
+        font-size: 17pt;
     }
 
     #læsmereboks img
     {
-        width: 80%;
+        width: 70%;
     }
 /*--------------VORES CAFEER---------------*/
 
     .vorescafeer h1
     {
-        font-size: 28pt;
+        padding-top: 30px;
+        font-size: 5vw;
     }
 
     .row1
@@ -945,23 +987,35 @@ footer img
 
     /*-------------STUDIERABAT------------*/
 
+    .rabat
+    {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
     .rabattekst
     {
-        margin: auto;
+        flex-direction: column;
+        justify-content: center;
         text-align: center;
         justify-content: center;
     }
 
     .rabattekst h1
     {
-        font-size: 39pt;
-        text-align: center;
-        margin: auto;
+        display: flex;
+        font-size: 7.5vw;
     }
 
     .rabattekst p
-    {
-        font-size: 15pt;
+    {    
+        display: flex;
+        font-size: 3vw;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
     }
 
     #læsmereboks a span
@@ -980,7 +1034,7 @@ footer img
     .ikoner img
     {
         width: 70%;
-        padding-top: 30px;
+        padding-top: 20px;
         display: flex;
         text-align: center;
         margin-left: auto;
@@ -1000,6 +1054,9 @@ footer img
         margin-right: auto;
         padding: 0;
         max-width: 100%;
+        padding-bottom: 60px;
+        padding-top: 60px;
+
 
     }
     .nyhedsbillede img
@@ -1018,14 +1075,22 @@ footer img
         align-content: center;
     }
 
-
-
-    .tekstboks h2
+    .tekstboks
     {
-        font-size: 18pt ;
+        max-width: 100%;
+    }
+    .tekstboks h2
+    {   
+        font-size: 4vw;
         text-align: center;
+        white-space: nowrap;
+        padding-bottom: 20px;
     }
 
+    .tekstboks p
+    {
+        font-size: 3vw;
+    }
 
     #indtastmail
     {
@@ -1036,83 +1101,60 @@ footer img
 
     .mailbox1
     {
-        padding: 10px;
-        font-size: 10px;
-        transition: 0.6s;
-        font-size: 10pt;
-        border-radius: 5px 0px 0px 5px;
-        border: none;
-        outline: none;
-        background-color: #e6dfd6;
+        padding: 12px;
+        font-size: 12px;
+        font-size: 12pt;
+
     }
     
     
     .sendbutton1
     {
-        background-color: #e6dfd6;
-        font-size: 10pt;
-        padding: 10px;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-        text-align: center;
-        color: black;
-        border: none;
-        outline: none;
+        font-size: 12pt;
+        padding: 12px;
     }
-    
-    
-
-
 /*-------------FOOTER--------------*/
-
-
-
 
     .footerbokse
     { 
         background-color: #764207;
-        padding: 10px;
+        max-width: 100%;
+        flex-wrap: wrap;
     }
 
-    .footerbokse p 
+    .footerbokse div
     {
-        font-size: 12pt;
+        max-width: 40%;
+    }
+
+
+    .footerbokse p, #somelink
+    {
+        font-size: 2.4vw;
     }
 
     .footerbokse h1
     { 
-        font-size: 15pt;
+        font-size: 3vw;
     }
 
 
     .mailbox
     {
-        width: 100px;
-        height: 30px;
-        display: inline-flex;
-        padding: 3px;
+        width: 180px;
+        height: 40px;
         margin-top: 4px;
-        font-size: 10px;
-        transition: 0.6s;
-        border-radius: 5px 0px 0px 5px;
-        border: none;
-        outline: none;
-        background-color: #e6dfd6;
+        font-size: 13px;
+
+ 
     }
 
     .sendbutton
     {
-        background-color: #e6dfd6;
-        font-size: 10px;
         padding: 3px 7px;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-        text-align: center;
-        color: black;
-        border: none;
-        outline: none;
-        width: 35px;
-        height: 30px;
+        font-size: 13px;
+        width: 55px;
+        height: 40px;
     }
 
 }
