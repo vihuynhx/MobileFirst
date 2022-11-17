@@ -404,7 +404,7 @@
 
 
 /*layout til øverste underoverskrifterne*/
-.tekstboks h2{
+.boks h2{
     color: #764207;
     font-size: 22pt;
     font-family: myriad-pro, sans-serif;
@@ -423,11 +423,11 @@
     font-style: normal;
     text-align: left;
     padding-top: 40px;
-    
+    margin-bottom: 10px;
 }
 
 /*layout til brødteksten*/
-.tekstboks p{
+.boks p{
     text-align:left;
     font-size: 14pt; 
     font-family: myriad-pro, sans-serif;
@@ -452,7 +452,7 @@
 }
 
 /*placeringen af teksten øverst i main*/
-.tekstboks
+.boks
 {
     width: 50%;
     margin-top: 0px;
@@ -516,14 +516,14 @@
 
 
 /*MOBIL RESPONSIVE til "OM OS" siden*/
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 650px)
 {
     
     .vier h1{
         font-size: 40pt;
     }
 
-    .tekstboks{
+    .omos > .boks{
         width: 90%;
     }
 
@@ -538,11 +538,12 @@
 
     .omos{
         flex-wrap: wrap;
+        max-width: 100%;
         margin: 0px;
+        padding: 0px;
     }
 
     .kontakt{
-        flex-wrap: wrap;
         margin: 0px;
     }
 
@@ -551,7 +552,7 @@
     }
 
     .icons .divboks #insta img{
-        margin-left: -70px;
+        margin-left: -50px;
     }
 
     .icons{
@@ -710,7 +711,7 @@
 
 /* RESPONSIVE DESIGN TIL MOBIL FOR MENU-SIDEN */
 
-@media screen and (max-width: 615px){
+@media screen and (max-width: 650px){
     .menucontainer{
         width: 90%;
     }
@@ -737,9 +738,4 @@
     .rabat-knap{
         margin-left: -140px;
     }
-
-
-
 }
-
-

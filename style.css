@@ -139,14 +139,14 @@ header div
 /*--------------------------------------------------------------------/*
 
 /*LAPTOP RESPONSIVE*/
-@media screen and (min-width: 650px)
+@media screen and (min-width: 651px)
 {
     /* Skjul mobilmenuen.*/
     #navMobile
     {
         display:none;
     }
-    #headerlogomobil, #mobilkvinde
+    #headerlogomobil, #mobilkvinde, #mobilnyhed
     {
         display:none;
     }
@@ -172,7 +172,7 @@ header div
 }
 
 /*boksen med billede og tekst skal fylde 50% hver*/
-.billedeboks 
+.billedeboks
 {
     width: 50%;
 }
@@ -183,12 +183,10 @@ header div
     display: block;
 }
 
-/*placeringen af teksten øverst i main*/
 .tekstboks
 {
     max-width: 50%;
     margin: auto;
-    
 }
 
 
@@ -202,6 +200,8 @@ header div
 {
     margin-top: 20px;
 }
+
+
 .tekstboks a span
 {
     width: 100%;
@@ -269,6 +269,11 @@ header div
 .row1 img
 {
     width: 100%;
+}
+
+.row1 :hover{
+    filter: brightness(95%);
+    transition: 200ms;
 }
 
 
@@ -355,6 +360,7 @@ header div
 
 }
 
+
 /*layout på teksten i ikon afsnittet*/
 #shoptekst a
 {   margin-top:5px;
@@ -369,27 +375,33 @@ header div
 
 /*---------------TIMELD NYHEDSBREV ------------------------------*/
 
-#nyhedsbillede
-{
-    max-width: 50%;
-    margin: auto;
-}
-
-#nyhedsbillede img
-{
-    width: 50%;
-    display: block;
-}
-
-/*flexbox i nyhedsbrev afsnittet*/
 .nyhed
 {
     display: flex;
     background-color: white;
 }
 
+.nyhedsbillede
+{
+    width: 50%;
+    justify-content: center;
+}
+
+.nyhedsbillede img
+{
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top:  auto;
+    margin-bottom: auto;
+    
+}
+
+
 /*layout på nyhedsbrev overskrift*/
-.nyhed .tekstboks h2{
+ .tekstboks h2{
     color: #764207;
     font-size: 30pt;
     font-family: myriad-pro, sans-serif;
@@ -604,6 +616,11 @@ footer img
 /*MOBIL RESPONSIVE*/
 @media only screen and (max-width: 650px)
 {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
     header
     {
         display: flex;
@@ -644,7 +661,9 @@ footer img
         background-position: center; 
         background-color: rgba(0, 0, 0, 0.199);
         height: 500px;
+        max-width: 100%;
     }
+
 
     .tekstboks h1
     {   text-align: center;
@@ -657,13 +676,13 @@ footer img
         display: flex;
         font-size: 15pt;
         color: white;
-        white-space: nowrap;
+        /*white-space: nowrap;*/
         justify-content: center;
     }
 
     #læsmereboks img
     {
-        width: 70%;
+        width: 100%;
     }
 
     #læsmereboks span,  .rabattekst #læsmere span
@@ -703,7 +722,10 @@ footer img
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+        height: auto;
     }
 
     .rabattekst
@@ -713,6 +735,7 @@ footer img
         padding-top: 60px;
         padding-bottom: 60px;
         justify-content: center;
+        margin: auto;
 
     }
 
@@ -720,7 +743,6 @@ footer img
     {
         text-align: center;
         font-size:50pt;
-        white-space: nowrap;
         color: #b47e4c;
         font-family: social-gothic-rough, sans-serif;
         font-weight: 700;
@@ -732,10 +754,22 @@ footer img
         display: none;
     }
 
-    #mobilkvinde img
+    .rabat #mobilkvinde
     {
         max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rabat #mobilkvinde img
+    {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
         display: block;
+        object-fit: contain;
     } 
 
     .ikoner
@@ -758,45 +792,42 @@ footer img
 
     .nyhed
     {
-        flex-direction: column;
-        background-color: white;
-        padding: 0;
+        padding-top: 70px;
         padding-bottom: 70px;
-
     }
   
     .nyhedsbillede
     {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        align-content: center;
-    }
-    .nyhedsbillede img
-    {
-       max-width: 100%;
+        display: none;
     }
    
-    .tekstboks
+    .nyhed .tekstboks
     {
         text-align: center;
         justify-content: center;
-        margin-right: auto;
-        margin-left: auto;
-        width: 100%;
+        max-width: 100%;
     }
 
-    .tekstboks h2
+    .nyhed .tekstboks h2
     {
         font-size: 25pt;
+        white-space: nowrap;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: auto;
     }
 
-    .tekstboks p
+    .nyhed .tekstboks p
     {
+        padding: 10px;
         font-size: 15pt;
         text-align: center;
         justify-content: center;
+        /*tekst fylder to linjer*/
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 100%;
     }
     
 
@@ -804,17 +835,33 @@ footer img
     {
         align-items: center;
         max-width: 100%;
-
+        white-space: nowrap;
     }
+
+    .mailbox1
+    {
+        padding: 15px;
+        font-size: 15px;
+        font-size: 15pt;
+    }
+    
+    
+    .sendbutton1
+    {
+        font-size: 15pt;
+        padding: 15px;
+    }
+    
 /*----------FOOTER---------*/
 
     .footerbokse
     {  
-        margin-top: -15px;
+        /*margin-top: -15px;*/
         flex-direction: column;
         text-align: center;
         background-color: #764207;
         padding-bottom: 20px;
+        margin: 0;
     }
 
     .footerbokse div
@@ -837,12 +884,24 @@ footer img
     {
         width: 20%;
     }
+
+    #mobilnyhed
+    {
+        max-width: 100%;
+        padding: 20px;
+    }
 }
 
 
 
-@media only screen and (min-width: 650px) and (max-width: 1023px ) 
+@media only screen and (min-width: 651px) and (max-width: 1023px ) 
 {
+
+    .socialmedia
+    {
+        white-space:nowrap;
+    }
+
 
     .tekstboks h1
     {
@@ -886,9 +945,18 @@ footer img
 
     /*-------------STUDIERABAT------------*/
 
+    .rabattekst
+    {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
     .rabattekst h1
     {
         font-size: 39pt;
+        text-align: center;
+        margin: auto;
     }
 
     .rabattekst p
@@ -937,27 +1005,67 @@ footer img
     .nyhedsbillede img
     {
         max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .nyhedsbillede
+    {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+
 
     .tekstboks h2
     {
-        font-size: 15pt ;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: 18pt ;
+        text-align: center;
     }
 
-    .tekstboks p
-    {
-        padding: 0;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
 
     #indtastmail
     {
         width: 50%;
+        white-space: nowrap;
     }
+
+
+    .mailbox1
+    {
+        padding: 10px;
+        font-size: 10px;
+        transition: 0.6s;
+        font-size: 10pt;
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        outline: none;
+        background-color: #e6dfd6;
+    }
+    
+    
+    .sendbutton1
+    {
+        background-color: #e6dfd6;
+        font-size: 10pt;
+        padding: 10px;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        border: none;
+        outline: none;
+    }
+    
+    
+
+
+/*-------------FOOTER--------------*/
+
+
 
 
     .footerbokse
@@ -971,11 +1079,11 @@ footer img
         font-size: 12pt;
     }
 
-    
     .footerbokse h1
     { 
         font-size: 15pt;
     }
+
 
     .mailbox
     {
@@ -1006,9 +1114,6 @@ footer img
         width: 35px;
         height: 30px;
     }
-
-
-
 
 }
 
