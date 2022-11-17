@@ -141,7 +141,7 @@ header div
     {
         display:none;
     }
-    #headerlogomobil, #mobilkvinde
+    #headerlogomobil, #mobilkvinde, #mobilnyhed
     {
         display:none;
     }
@@ -383,6 +383,7 @@ header div
     width: 70%;
     margin-top:  auto;
     margin-bottom: auto;
+    
 }
 
 
@@ -602,6 +603,11 @@ footer img
 /*MOBIL RESPONSIVE*/
 @media only screen and (max-width: 650px)
 {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
     header
     {
         display: flex;
@@ -642,7 +648,9 @@ footer img
         background-position: center; 
         background-color: rgba(0, 0, 0, 0.199);
         height: 500px;
+        max-width: 100%;
     }
+
 
     .tekstboks h1
     {   text-align: center;
@@ -655,13 +663,13 @@ footer img
         display: flex;
         font-size: 15pt;
         color: white;
-        white-space: nowrap;
+        /*white-space: nowrap;*/
         justify-content: center;
     }
 
     #læsmereboks img
     {
-        width: 70%;
+        width: 100%;
     }
 
     #læsmereboks span,  .rabattekst #læsmere span
@@ -701,7 +709,10 @@ footer img
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        max-width: 100%;
+        margin: auto;
+        padding: 0;
+        height: auto;
     }
 
     .rabattekst
@@ -711,6 +722,7 @@ footer img
         padding-top: 60px;
         padding-bottom: 60px;
         justify-content: center;
+        margin: auto;
 
     }
 
@@ -718,7 +730,6 @@ footer img
     {
         text-align: center;
         font-size:50pt;
-        white-space: nowrap;
         color: #b47e4c;
         font-family: social-gothic-rough, sans-serif;
         font-weight: 700;
@@ -730,10 +741,22 @@ footer img
         display: none;
     }
 
-    #mobilkvinde img
+    .rabat #mobilkvinde
     {
         max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .rabat #mobilkvinde img
+    {
+        max-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
         display: block;
+        object-fit: contain;
     } 
 
     .ikoner
@@ -756,10 +779,8 @@ footer img
 
     .nyhed
     {
-        background-color: white;
         padding-top: 70px;
         padding-bottom: 70px;
-        display: flex;
     }
   
     .nyhedsbillede
@@ -771,11 +792,12 @@ footer img
     {
         text-align: center;
         justify-content: center;
+        max-width: 100%;
     }
 
     .nyhed .tekstboks h2
     {
-        font-size: 20pt;
+        font-size: 25pt;
         white-space: nowrap;
         text-align: center;
         justify-content: center;
@@ -785,6 +807,7 @@ footer img
 
     .nyhed .tekstboks p
     {
+        padding: 10px;
         font-size: 15pt;
         text-align: center;
         justify-content: center;
@@ -806,30 +829,16 @@ footer img
     {
         padding: 15px;
         font-size: 15px;
-        transition: 0.6s;
         font-size: 15pt;
-        border-radius: 5px 0px 0px 5px;
-        border: none;
-        outline: none;
-        background-color: #e6dfd6;
     }
     
     
     .sendbutton1
     {
-        background-color: #e6dfd6;
         font-size: 15pt;
         padding: 15px;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-        text-align: center;
-        color: black;
-        border: none;
-        outline: none;
-    
     }
     
-
 /*----------FOOTER---------*/
 
     .footerbokse
@@ -839,6 +848,7 @@ footer img
         text-align: center;
         background-color: #764207;
         padding-bottom: 20px;
+        margin: 0;
     }
 
     .footerbokse div
@@ -848,7 +858,7 @@ footer img
     }
     .footerbokse p
     {
-        /*margin-top: -10px;*/
+        margin-top: -10px;
 
     }
     .footerbokse h1
@@ -861,11 +871,17 @@ footer img
     {
         width: 20%;
     }
+
+    #mobilnyhed
+    {
+        max-width: 100%;
+        padding: 20px;
+    }
 }
 
 
 
-@media only screen and (min-width: 650px) and (max-width: 1023px ) 
+@media only screen and (min-width: 651px) and (max-width: 1023px ) 
 {
 
     .socialmedia
@@ -916,9 +932,18 @@ footer img
 
     /*-------------STUDIERABAT------------*/
 
+    .rabattekst
+    {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+    }
+
     .rabattekst h1
     {
         font-size: 39pt;
+        text-align: center;
+        margin: auto;
     }
 
     .rabattekst p
