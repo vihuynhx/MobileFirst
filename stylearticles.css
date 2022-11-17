@@ -21,11 +21,8 @@
 
 .bassin_graven div{
     background-color: #f4d19c;
-    justify-content: space-around;
     margin: 50px;
-    margin-left: 20px;
     width: 50%;
-
 }
 
 .bassin_graven h1{
@@ -60,10 +57,17 @@
     font-style: normal;
 }
 
-.img_bassin_venstre{
+.bassin_graven #bas_imgvenstre_ipad{
+    padding-top: auto;
+    padding-bottom: auto;
     display: block;
-    height: auto;
-    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_bassin_venstre{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .bassin_graven_content img{
@@ -258,6 +262,7 @@
     {
         flex-direction: column;
         height: 100%;
+        text-align: center;
     }
 
     .vestergade_brammersgade_3img
@@ -573,53 +578,6 @@
     }
 }
 
-/*TABLET RESPONSIVE til "OM OS" siden*/
-@media only screen and (min-width: 651px) 
-and (max-width: 1023px)
-{
-    .vier h1{
-        font-size: 50pt;
-    }
-
-    .omos > .boks{
-        width: 90%;
-    }
-
-    .billedeboks{
-        display: block;
-        
-    }
-
-    .billedeboks img{
-        width: 200%;
-    }
-
-
-    .omos{
-        flex-wrap: wrap;
-        max-width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-
-    .kontakt{
-        width: 80%;
-        margin: 0px;
-        
-    }
-
-    .kontakt, .divboks{
-        width: 200%;
-    }
-
-    .icons .divboks #insta img{
-        margin-left: -50px;
-    }
-
-    .icons{
-        padding-bottom: 20px;
-    }
-}
 
 /*----------------------------- CSS til MENU siden ---------------------------*/
 
