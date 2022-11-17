@@ -261,7 +261,7 @@ header div
 .vorescafeer h1
 {
     color: #764207;
-    font-size: 4.5vw;
+    font-size: 4vw;
     font-family: myriad-pro, sans-serif;
     font-weight: 550;
     padding-top: 20px;
@@ -338,9 +338,9 @@ header div
 
 .trelinks
 {
-    padding-top: 40px;
+    padding-top: 60px;
     background-color:#e6dfd6;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 }
 
 /*flexbox til ikonerne*/
@@ -355,7 +355,7 @@ header div
 /*ikonernes placering*/
 .ikoner img
 {
-    width: 100%;
+    width: 110%;
 
 }
 
@@ -378,6 +378,9 @@ header div
 {
     display: flex;
     background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 .nyhedsbillede
@@ -392,7 +395,7 @@ header div
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     margin-top:  auto;
     margin-bottom: auto;
     
@@ -526,9 +529,8 @@ footer
     background-color: #764207;
     font-family: myriad-pro, sans-serif;
     color: white;
-    padding-bottom: 40px;
-    padding-top: 40px;
-
+    padding-bottom: 70px;
+    padding-top: 20px;
 }
 
 footer section
@@ -567,7 +569,7 @@ footer section div p
 
 #tilmeld
 {
-    line-height:22px;
+    line-height:25px;
 }
 
 footer img
@@ -1116,10 +1118,7 @@ footer img
         flex-wrap: wrap;
     }
 
-    .footerbokse div
-    {
-        max-width: 47%;
-    }
+
 
 
     .footerbokse p 
