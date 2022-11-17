@@ -86,19 +86,20 @@
 /*Vestergade og Brammersgade*/
 .vestergade_brammersgade{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: white;
-    height: 750px;
+    height: 100%;
     width: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .vestergade_brammersgade div{
     background-color: white;
-    justify-content: space-around;
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-left: 3%;
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
 }
 
 .vestergade_brammersgade h1{
@@ -133,14 +134,58 @@
     font-style: normal;
 }
 
-.vestergade_brammersgade img{
-    float: right;
-    height:400px; 
-    width:250px; 
-    margin-right: 80px; 
-    margin-top: 35px;
-    padding-bottom: 90px;
-} 
+@media only screen and (min-width: 767px) 
+{
+    .vestergade_brammersgade_3img
+    {
+        display: flex;
+        
+    }
+    
+    .vest_bram_højre{
+        margin-top: -50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .vest_bram_midt{
+        margin-top: -170px;
+    }
+    
+    .vest_bram_venstre{
+        margin-top: -250px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) 
+{
+    .vestergade_brammersgade 
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .vest_bram_venstre, .vest_bram_midt
+    {
+        display: none;
+    }
+
+
+    .bassin_graven
+    {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .bassin_graven div 
+    {
+        width: 80%;
+    }
+}
 
 /* Graven */
 .bassin_graven .graven_imgs{
@@ -217,10 +262,6 @@
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
-  }
 
 
 /* Graven*/
@@ -582,6 +623,4 @@
     .rabat-knap{
         margin-left: -140px;
     }
-
-
 }

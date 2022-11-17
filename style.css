@@ -75,7 +75,7 @@ header div
 
 #navLaptop a{
     text-decoration: none;
-    color:white;
+    color:white;    
 }
 
 #navLaptop a:hover 
@@ -88,10 +88,53 @@ header div
 }
 
 
+/* Dropdown */
+
+.dropbtn {
+    background-color: #764207;
+    color: white;
+    font-family:'Dosis', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    font-family:'Dosis', sans-serif;
+    text-transform: uppercase;
+    width: auto;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #bb7700;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  .dropdown-content a {    
+   
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 12px 16px;
+}
+  
+  .dropdown-content a:hover {background-color: #cbb58f;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn { text-decoration: underline;}
+
+
+
 /*--------------------------------------------------------------------/*
 
 /*LAPTOP RESPONSIVE*/
-@media screen and (min-width: 767px)
+@media screen and (min-width: 650px)
 {
     /* Skjul mobilmenuen.*/
     #navMobile
@@ -138,9 +181,8 @@ header div
 /*placeringen af teksten øverst i main*/
 .tekstboks
 {
-    width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
+    max-width: 50%;
+    margin: auto;
     
 }
 
@@ -324,12 +366,13 @@ header div
 
 #nyhedsbillede
 {
-    width: 50%;
+    max-width: 50%;
+    margin: auto;
 }
 
 #nyhedsbillede img
 {
-    width: 100%;
+    width: 50%;
     display: block;
 }
 
@@ -337,22 +380,18 @@ header div
 .nyhed
 {
     display: flex;
-    padding-right: 135px;
-    white-space: nowrap;
     background-color: white;
 }
 
 /*layout på nyhedsbrev overskrift*/
-.nyhed h2{
+.nyhed .tekstboks h2{
     color: #764207;
-    font-size: 38pt;
+    font-size: 30pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: auto;
     text-align: center;
-
 }
 
 #indtastmail
@@ -360,6 +399,10 @@ header div
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mailbox1
@@ -548,14 +591,13 @@ footer img
     outline: none;
     width: 70px;
     height: 40px;
-
 }
 
 /*---------------------MOBIL RESPONSIVE------------------------------*/
 
 
 /*MOBIL RESPONSIVE*/
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 650px)
 {
     header
     {
@@ -583,7 +625,7 @@ footer img
         padding: 7px;
 
     }    
-
+/*---------------KAFFE-----------------------*/
     .billedeboks img, .billedeboks
     {
         display:none
@@ -623,7 +665,7 @@ footer img
     {
         font-size: 16pt;
     }
-
+/*----------------CARDS-------------------*/
     .row1
     { 
         flex-direction: column;
@@ -640,14 +682,14 @@ footer img
 
 
     .vorescafeer h1
-{
-    padding-top: 25px;
-    color: #764207;
-    font-family: myriad-pro, sans-serif;
-    font-weight: 550;
-    font-size: 25pt;
-    text-align: center
-}
+    {
+        padding-top: 25px;
+        color: #764207;
+        font-family: myriad-pro, sans-serif;
+        font-weight: 550;
+        font-size: 25pt;
+        text-align: center
+    }
 
 /*----------STUDIERABAT---------*/
 
@@ -718,7 +760,6 @@ footer img
 
     }
   
-
     .nyhedsbillede
     {
         display: flex;
@@ -795,8 +836,174 @@ footer img
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1023px ) 
+@media only screen and (min-width: 650px) and (max-width: 1023px ) 
 {
+
+    .tekstboks h1
+    {
+        text-align: center;
+        font-size:38pt;
+        white-space: nowrap;
+    }
+
+    .tekstboks p
+    {
+        font-size: 14pt;
+        justify-content: center;
+    }
+
+    .tekstboks a span
+    {
+        font-size: 18pt;
+    }
+
+    #læsmereboks img
+    {
+        width: 80%;
+    }
+/*--------------VORES CAFEER---------------*/
+
+    .vorescafeer h1
+    {
+        font-size: 28pt;
+    }
+
+    .row1
+    {
+        flex-wrap: wrap;
+    }
+
+    .row1 div
+    {
+        width: 45%;
+        padding:10px;
+    }
+
+    /*-------------STUDIERABAT------------*/
+
+    .rabattekst h1
+    {
+        font-size: 39pt;
+    }
+
+    .rabattekst p
+    {
+        font-size: 15pt;
+    }
+
+    #læsmereboks a span
+    {
+        font-size: 18pt;
+    }
+   
+
+    #læsmereboks img
+    {
+        width: 80%;
+    }
+
+/*----------------IKONER----------------*/
+
+    .ikoner img
+    {
+        width: 70%;
+        padding-top: 30px;
+        display: flex;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #shoptekst a
+    {
+        font-size: 15pt;
+    }
+
+/*-------------NYHEDSBREV--------------*/
+
+    .nyhed
+    {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        max-width: 100%;
+v
+    }
+    .nyhedsbillede img
+    {
+        max-width: 100%;
+    }
+
+    .tekstboks h2
+    {
+        font-size: 15pt ;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tekstboks p
+    {
+        padding: 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #indtastmail
+    {
+        width: 50%;
+    }
+
+
+    .footerbokse
+    { 
+        background-color: #764207;
+        padding: 10px;
+    }
+
+    .footerbokse p 
+    {
+        font-size: 12pt;
+    }
+
+    
+    .footerbokse h1
+    { 
+        font-size: 15pt;
+    }
+
+    .mailbox
+    {
+        width: 100px;
+        height: 30px;
+        display: inline-flex;
+        padding: 3px;
+        margin-top: 4px;
+        font-size: 10px;
+        transition: 0.6s;
+        border-radius: 5px 0px 0px 5px;
+        border: none;
+        outline: none;
+        background-color: #e6dfd6;
+    }
+
+    .sendbutton
+    {
+        background-color: #e6dfd6;
+        font-size: 10px;
+        padding: 3px 7px;
+        border-radius: 0px 5px 5px 0px;
+        cursor: pointer;
+        text-align: center;
+        color: black;
+        border: none;
+        outline: none;
+        width: 35px;
+        height: 30px;
+    }
+
+
+
 
 }
 
