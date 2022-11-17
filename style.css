@@ -261,7 +261,7 @@ header div
 .vorescafeer h1
 {
     color: #764207;
-    font-size: 4vw;
+    font-size: 3.7vw;
     font-family: myriad-pro, sans-serif;
     font-weight: 550;
     padding-top: 20px;
@@ -362,13 +362,19 @@ header div
 
 /*layout på teksten i ikon afsnittet*/
 #shoptekst a
-{   margin-top:5px;
-    display: flex;
-    justify-content: center;
+{   
+    margin-top:5px;
     color: #764207;
     font-size: 17pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 900;
+   display: flex;
+   justify-content: center;
+}
+
+#besogshop
+{
+    margin-left: 20px;
 }
 
 
@@ -545,14 +551,14 @@ footer section
 footer section div h1
 {
     margin-top: 60px;
-    font-size: 15pt;
+    font-size: 17pt;
     color: white;
     white-space:nowrap;
 }
 
 footer section div p
 {
-    line-height:35px;
+    line-height:45px;
     font-size: 1.5vw;
     font-weight: lighter;
     white-space: nowrap;
@@ -561,15 +567,15 @@ footer section div p
 #somelink
 {
     text-decoration: none;
-    line-height:35px;
-    font-size: 14pt;
+    line-height:50px;
+    font-size: 1.5vw;
     font-weight: lighter;
     color: white;
 }
 
 #tilmeld
 {
-    line-height:25px;
+    line-height:30px;
 }
 
 footer img
@@ -891,7 +897,8 @@ footer img
         align-items: center;
         gap:40px;
     }
-    .footerbokse p
+    .footerbokse p, #somelink
+
     {
         margin-top: -10px;
         font-size: 3.5vw;
@@ -1027,7 +1034,7 @@ footer img
     .ikoner img
     {
         width: 70%;
-        padding-top: 30px;
+        padding-top: 20px;
         display: flex;
         text-align: center;
         margin-left: auto;
@@ -1047,8 +1054,8 @@ footer img
         margin-right: auto;
         padding: 0;
         max-width: 100%;
-        padding-bottom: 30px;
-        padding-top: 30px;
+        padding-bottom: 60px;
+        padding-top: 60px;
 
 
     }
@@ -1068,14 +1075,22 @@ footer img
         align-content: center;
     }
 
-
-
+    .tekstboks
+    {
+        max-width: 100%;
+    }
     .tekstboks h2
     {   
-        font-size: 18pt ;
+        font-size: 4vw;
         text-align: center;
+        white-space: nowrap;
+        padding-bottom: 20px;
     }
 
+    .tekstboks p
+    {
+        font-size: 3vw;
+    }
 
     #indtastmail
     {
@@ -1086,28 +1101,17 @@ footer img
 
     .mailbox1
     {
-        padding: 10px;
-        font-size: 10px;
-        transition: 0.6s;
-        font-size: 10pt;
-        border-radius: 5px 0px 0px 5px;
-        border: none;
-        outline: none;
-        background-color: #e6dfd6;
+        padding: 12px;
+        font-size: 12px;
+        font-size: 12pt;
+
     }
     
     
     .sendbutton1
     {
-        background-color: #e6dfd6;
-        font-size: 10pt;
-        padding: 10px;
-        border-radius: 0px 5px 5px 0px;
-        cursor: pointer;
-        text-align: center;
-        color: black;
-        border: none;
-        outline: none;
+        font-size: 12pt;
+        padding: 12px;
     }
 /*-------------FOOTER--------------*/
 
@@ -1118,12 +1122,15 @@ footer img
         flex-wrap: wrap;
     }
 
-
-
-
-    .footerbokse p 
+    .footerbokse div
     {
-        font-size: 2vw;
+        max-width: 40%;
+    }
+
+
+    .footerbokse p, #somelink
+    {
+        font-size: 2.4vw;
     }
 
     .footerbokse h1
@@ -1131,22 +1138,23 @@ footer img
         font-size: 3vw;
     }
 
+
     .mailbox
     {
-        width: 170px;
-        height: 30px;
-        padding: 3px;
+        width: 180px;
+        height: 40px;
         margin-top: 4px;
         font-size: 13px;
+
  
     }
 
     .sendbutton
     {
-        font-size: 13px;
         padding: 3px 7px;
-        width: 45px;
-        height: 30px;
+        font-size: 13px;
+        width: 55px;
+        height: 40px;
     }
 
 }
