@@ -434,7 +434,7 @@
 /*layout til øverste underoverskrifterne*/
 .boks h2{
     color: #764207;
-    font-size: 22pt;
+    font-size: 2.3vw;
     font-family: myriad-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -445,19 +445,20 @@
 /*layout til de andre to underoverskrifterne*/
 .omos h3{
     color: #764207;
-    font-size: 22pt;
+    font-size: 2.3vw;
     font-family: myriad-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
     text-align: left;
     padding-top: 40px;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 /*layout til brødteksten*/
 .boks p{
     text-align:left;
-    font-size: 14pt; 
+    font-size: 1.8vw; 
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -513,7 +514,7 @@
 /*layout til brødtekst i kontakt boksen*/
 .kontakt p{
     text-align:left;
-    font-size: 14pt; 
+    font-size: 1.5vw; 
     font-family: myriad-pro, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -543,12 +544,29 @@
 }
 
 
+.besog p
+{
+    white-space: nowrap;
+}
+
 /*MOBIL RESPONSIVE til "OM OS" siden*/
 @media only screen and (max-width: 650px)
 {
     
     .vier h1{
-        font-size: 40pt;
+        font-size: 11vw;
+        white-space: nowrap;
+    }
+
+    .omos .boks p
+    {
+        font-size: 3.3vw;
+        line-height: 25px;
+    }
+
+    .omos .boks h3, .omos .boks h2
+    {
+        font-size: 4.8vw;;
     }
 
     .omos > .boks{
@@ -591,6 +609,11 @@
     {
         display: none;
     }
+
+    .kontakt p {
+        font-size: 3.2vw;
+    }
+
 }
 
 
@@ -811,25 +834,28 @@
     .ipadomoms
     {
         display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
 
     }
 
-    .ipadomoms #ipadkaffediv .ipadtreboks
+ .ipadomoms .ipadtreboks,  .ipadomoms #ipadkaffediv
     {
         width: 50%;
         display:flex;
         justify-content: space-evenly;
-
     }
 
     #ipadkaffediv img
     {
-        position: relative;
+        
         max-width: 100%;
-        max-height: 100%;
-
-
+        max-height: 100%;  
+        display: block;
     }
+    
+
     .ipadicons 
     {
         flex-direction: row;
