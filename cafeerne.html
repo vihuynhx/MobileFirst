@@ -69,7 +69,7 @@
 
     <!---------------MAIN-------------------->
     <main>
-        <!-- Vestergade -->
+        <!----- Vestergade ------>
     <a id="vestergade-link"></a> 
     <section class="vestergade_brammersgade">
     <div>
@@ -82,7 +82,7 @@
         <h2>Åbningstider</h2>
         <p>Mandag-Fredag: 07.30-18.00 <br> Lørdag: 09.00-17.00 <br> Søndag: 10.00-17.00<p>
     </div>
-    
+
     <div class="vestergade_brammersgade_3img">
         <div><img class="vest_bram_højre" src="images/vestergade_caffee_højre.jpg" alt="Vestergade"></div>
         <div><img class="vest_bram_midt" src="images/vestergade_caffee_midt.jpg" alt="Vestergade"></div>
@@ -90,19 +90,23 @@
     </div>
 
     <div id="mobilbram">
-    <img class="vest_bram_højre" src="images/vestergade_caffee_højre.jpg" alt="Vestergade">
+        <img class="vest_bram_højre" src="images/vestergade_caffee_højre.jpg" alt="Vestergade">
     </div>
 </section>
 
-<!-- Bassin 7 -->
+<!------ Bassin 7 ------>
 <a id="bassin-link"></a> 
 <section class="bassin_graven">
     <div id="bas_img_ipad">
         <img class="img_bassin_venstre" src="images/bassin.jpg" alt="bassin">
     </div>
+
     <div class="bassin_graven_content">
         <h1>Bassin 7</h1>
         <h3>Ved Bassin 7 har vi åbnet en lille perle af en butik med lækker udsigt over havnebadet. Udover kaffe  har vi også øl, vin og drinks! Vi har derfor valgt at kalde stedet: STREET COFFEE & BAR. Kom og vær med til alt det gode.</h3>
+        <h3>Ved Bassin7  har vi åbnet åbnet en lille perle af en butik, med lækker udsigt over havnebadet. 
+            Udover kaffe  har vi også øl, vin og drinks! Selvfølgelig stadig i STREET COFFEE's ånd så alt er godt! 
+            Vi har derfor valgt at kalde stedet: STREET COFFEE & BAR. Kom og vær med til alt det gode.</h3>
         <h2>Adresse</h2>
         <p>Irma Pedersensgade 2D, 8000 Aarhus (BASSIN 7)</p>
         <h2>Åbningstider</h2>
@@ -111,32 +115,35 @@
     </div>
 </section>
 
-<!-- Brammersgade -->
+<!------ Brammersgade ------>
 <a id="brammersgade-link"></a> 
 <section class="vestergade_brammersgade">
     <div>
         <h1>Brammersgade</h1>
         <h3>På Brammersgade ligger Street Coffees første og mindste butik. Om sommeren er gaden fyldt med skamler og bænke, så alle kan nyde en plads i solen - om vinteren klemmer vi os sammen og hygger for fuld udblæsning inde i cafeen.</h3>
+        <h3>Street Coffee's første og mindste butik. 
+            Om sommeren er gaden drysset med skamler og bænke, så vores dejlige kunder kan nyde en plads i solen
+            - om vinteren klemmer vi os sammen og hygger for fuld udblæsning.</h3>
         <h2>Adresse</h2>
         <p>Brammersgade 15, 8000 Aarhus</p>
         <h2>Åbningstider</h2>
         <p>Mandag-Fredag: 07.30-18.00 <br> Lørdag-Søndag: 08.00-17.00<p>
     </div>
+
     <div class="vestergade_brammersgade_3img">
         <div><img class="vest_bram_højre" src="images/bram_caffee_højre.jpg" alt="Brammersgade"></div>
         <div><img class="vest_bram_midt" src="images/bram_caffee_midt.jpg" alt="Brammersgade"></div>
         <div id="bram_img_ipad"><img class="vest_bram_venstre" src="images/bram_venstre.jpg" alt="Brammersgade"></div>
     </div>
+
     <div id="mobilbram">
         <img class="vest_bram_midt" src="images/bram_caffee_midt.jpg" alt="Brammersgade">
     </div>
 </section>
 
-<!-- Graven -->
+<!------ Graven ------>
 <a id="graven-link"></a> 
-<section class="bassin_graven">
-    <div class="graven_imgs">
-          <div class="slideshow-container">
+    <section class="bassin_graven">
 
             <div class="mySlides fade">
               <img src="images/graven_caffee_1.jpg" >
@@ -200,53 +207,120 @@
     </div>
 </section>
 
+<!------ SLIDESHOW CREDIT W3SCHOOL ------>
+        <div class="graven_imgs">
+            <div class="slideshow-container">        
+
+                <div class="mySlides fade">
+                <img src="images/graven_caffee_1.jpg" >
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="images/graven_caffee_2.jpg">
+                </div>
+                
+                <div class="mySlides fade">
+                <img src="images/graven_caffee_3.jpg">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                            
+                <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </div>
+        <!---------SLUT SLIDESHOW--------->
+
+        <div class="bassin_graven_content">
+            <h1>Graven</h1>
+            <h3>Blandt gode restauranter har vi åbnet vores kaffebar op lige overfor "hipsterhøjen". 
+                Udover vores sublime kaffe byder vi også på øl på fad og flaske, samt vin og drinks. 
+                Det er også her vi holder vores kaffekurser og events.</h3>
+            <h2>Åbningstider</h2>
+            <p>Mandag-tirsdag: 07.30-18.00 <br> Onsdag-Fredag: 07.30-20.00 <br> Lørdag: 08.00-20.00 <br> Sønsag: 09.00-18.00 </p>
+            <h2>Adresse</h2>
+            <p>Graven 22, 8000 Aarhus</p>
+        </div>
+
+    </section>
 </main>
 
+<!------------FOOTER--------------->
+<footer>
+    <section class="footerbokse">
+        <div>     <!--Første container -->
+            <h1>Vores caféer </h1><br> 
+            <p>
+                Brammersgade 15, 8000 Aarhus <br>
+                Vestergade 52, 8000 Aarhus<br>
+                Graven 22, 8000 Aarhus<br>
+                Bassin 7, 8000 Aarhus<br>
+            </p>
+        </div>
 
+        <div>
+            <h1>Kontakt os</h1><br> <!--Andet container -->
+            <p>
+                Tlf. 61 69 05 80 <br>
+                Mail: info@streetcoffee.dk <br>
+                CVR: 32881092
+            </p>
 
-<!--FOOTER -->
-            <footer>
-                <section class="footerbokse">
-                    <div>     <!--Første container -->
-                        <h1>Vores caféer </h1><br> 
-                        <p>
-                            Brammersgade 15, 8000 Aarhus <br>
-                            Vestergade 52, 8000 Aarhus<br>
-                            Graven 22, 8000 Aarhus<br>
-                            Bassin 7, 8000 Aarhus<br>
-                        </p>
-                    </div>
-        
-                    <div>
-                        <h1>Kontakt os</h1><br> <!--Andet container -->
-                        <p>
-                            Tlf. 61 69 05 80 <br>
-                            Mail: info@streetcoffee.dk <br>
-                            CVR: 32881092
-                        </p>
-        
-                    </div>
-        
-                    <div>
-                        <h1>Nyhedsbrev</h1><br>  <!--Tredje container -->
-                        <p id="tilmeld">
-                            Tilmeld dig vores nyhedsbrev, og <br> bliv opdateret på vores nyeste <br> events.
-                        </p>
-                        <form action="nyhedsbrev.html">  <!--nyhedsbrev -->
-                            <input class="mailbox" placeholder="Indtast din e-mail" name="seach">
-                            <button class="sendbutton">Send</button>
-                        </form>
-                    </div>
-        
-                    <div>
-                        <h1>Følg os</h1>  <!--Fjerde container -->
-                        <a href="https://www.facebook.com/StreetCoffeedk/"><img src="images/fbpx45.png" alt="fb">
-                        <a href="https://www.instagram.com/streetcoffeedk/?hl=da"><img src="images/insta45.png" alt=instra></a> <br>
-                        <a id="somelink" href="#">Cookie- & Privatlivspolitik<br>
-                            Services    </a>
-                    </div>
-                </section>
-            </footer>
+        </div>
+
+        <div>
+            <h1>Nyhedsbrev</h1><br>  <!--Tredje container -->
+            <p id="tilmeld">
+                Tilmeld dig vores nyhedsbrev, og <br> bliv opdateret på vores nyeste <br> events.
+            </p>
+            <form action="nyhedsbrev.html">  <!--nyhedsbrev -->
+                <input class="mailbox" placeholder="Indtast din e-mail" name="seach">
+                <button class="sendbutton">Send</button>
+            </form>
+        </div>
+
+        <div>
+            <h1>Følg os</h1>  <!--Fjerde container -->
+            <a href="https://www.facebook.com/StreetCoffeedk/"><img src="images/fbpx45.png" alt="fb">
+            <a href="https://www.instagram.com/streetcoffeedk/?hl=da"><img src="images/insta45.png" alt=instra></a> <br>
+            <a id="somelink" href="#">Cookie- & Privatlivspolitik<br> Services</a>
+        </div>
+    </section>
+</footer>
 
 </body>
 
