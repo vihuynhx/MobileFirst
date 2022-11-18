@@ -2,3 +2,9 @@ User-agent: *
 Disallow: /booking/
 Disallow: /shop/
 Disallow: /kurser/
+Disallow: /skræddersyetkaffekursus/
+Disallow: /privatkaffekursus/
+Disallow: /kursusilatteart/
+Disallow: /barista kursus/
+Disallow: /kaffescooter/
+Disallow: /firmakaffe/
