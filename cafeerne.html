@@ -41,7 +41,7 @@
                 <div class="dropbtn">Kurser</div>
                 <div class="dropdown-content">
                     <a href="#">Skræddersyet kaffekursus</a>
-                    <a href="#">Privat kaffakursus</a>
+                    <a href="#">Privat kaffekursus</a>
                     <a href="#">Kursus i latteart</a>
                     <a href="#">Baristakursus</a>
                 </div>
@@ -76,7 +76,7 @@
         <h1>Vestergade</h1>
         <h3>Lad dig opsluge af kaffen, avisen og musikken. 
             Den særlige rolige atmosfære gør kaffebaren særlig attraktiv efter en hektisk shoppetur eller en travl arbejdsdag. 
-            Her kan du nemt smutte forbi og tage en pause eller en to-go-kaffe</h3>
+            Her kan du nemt smutte forbi og tage en pause eller en to-go-kaffe.</h3>
         <h2>Adresse</h2>   
         <p>Vestergade 52, 8000 Aarhus</p>
         <h2>Åbningstider</h2>
@@ -103,6 +103,7 @@
 
     <div class="bassin_graven_content">
         <h1>Bassin 7</h1>
+        <h3>Ved Bassin 7 har vi åbnet en lille perle af en butik med lækker udsigt over havnebadet. Udover kaffe  har vi også øl, vin og drinks! Vi har derfor valgt at kalde stedet: STREET COFFEE & BAR. Kom og vær med til alt det gode.</h3>
         <h3>Ved Bassin7  har vi åbnet åbnet en lille perle af en butik, med lækker udsigt over havnebadet. 
             Udover kaffe  har vi også øl, vin og drinks! Selvfølgelig stadig i STREET COFFEE's ånd så alt er godt! 
             Vi har derfor valgt at kalde stedet: STREET COFFEE & BAR. Kom og vær med til alt det gode.</h3>
@@ -119,6 +120,7 @@
 <section class="vestergade_brammersgade">
     <div>
         <h1>Brammersgade</h1>
+        <h3>På Brammersgade ligger Street Coffees første og mindste butik. Om sommeren er gaden fyldt med skamler og bænke, så alle kan nyde en plads i solen - om vinteren klemmer vi os sammen og hygger for fuld udblæsning inde i cafeen.</h3>
         <h3>Street Coffee's første og mindste butik. 
             Om sommeren er gaden drysset med skamler og bænke, så vores dejlige kunder kan nyde en plads i solen
             - om vinteren klemmer vi os sammen og hygger for fuld udblæsning.</h3>
@@ -142,6 +144,68 @@
 <!------ Graven ------>
 <a id="graven-link"></a> 
     <section class="bassin_graven">
+
+            <div class="mySlides fade">
+              <img src="images/graven_caffee_1.jpg" >
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/graven_caffee_2.jpg">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/graven_caffee_3.jpg">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+                        
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+    </div>
+    <div class="bassin_graven_content">
+        <h1>Graven</h1>
+        <h3>Som noget helt nyt har vi åbnet vores kaffebar på Graven, som ligger lige overfor "hipsterhøjen". Udover vores store udvalg på kaffer byder vi også på øl på fad og flaske samt vin og drinks. Det er også her du finder vores kaffekurser og events.</h3>
+        <h2>Åbningstider</h2>
+        <p>Mandag-tirsdag: 07.30-18.00 <br> Onsdag-Fredag: 07.30-20.00 <br> Lørdag: 08.00-20.00 <br> Søndag: 09.00-18.00 </p>
+        <h2>Adresse</h2>
+        <p>Graven 22, 8000 Aarhus</p>
+    </div>
+</section>
 
 <!------ SLIDESHOW CREDIT W3SCHOOL ------>
         <div class="graven_imgs">
