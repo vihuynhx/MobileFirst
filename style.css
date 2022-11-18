@@ -54,7 +54,13 @@ header div
 
 .headersome .socialmedia #omos
 {
-    padding-top: 9px
+    padding-top: 9px;
+    height: 10px; 
+}
+
+.headersome .socialmedia #omos:hover
+{
+    filter: brightness(80%);
 }
 
 .headersome
@@ -200,6 +206,10 @@ header div
     display: inline-block;
 }
 
+.tekstboks a:hover{
+    filter: brightness(85%);
+}
+
 #læsmereboks
 {
     margin-top: 20px;
@@ -209,12 +219,14 @@ header div
 {
     display: flex;
     color: #bb7700;
-    font-size: 7vw;
+    font-size: 7vw !important;
     font-family: social-gothic-rough, sans-serif;
     font-weight: 700;
     font-style: normal;
     justify-content: center;
     white-space: nowrap;
+    padding-left: auto;
+    padding-right: auto;
 }
 
 .tekstboks a span, .rabattekst a span
@@ -226,7 +238,6 @@ header div
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -70%);
     transform: translate(-50%, -70%);
     display: inline-block;
 }
@@ -275,7 +286,6 @@ header div
     align-content: center;
     gap:15px;
     padding:15px;
-
 }
 
 .row1 img
@@ -295,7 +305,8 @@ header div
     margin-top: 50px;
     display: flex;
     background-color: white;
-
+    padding: 0;
+    margin: 0;
 }
 
 /*layout på studierabat overskrift*/
@@ -311,26 +322,33 @@ header div
 #studierabatbillede
 {
     width: 50%;
+    padding: 0;
+    margin: 0;
 }
 
 #studierabatbillede img
 {
     width: 100%;
     display: block;
+    padding: 0;
+    margin: 0;
 }
 
 .rabattekst
 {
     width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
-    
+    margin: auto;
+    padding: auto;
 }
 
 .rabattekst a 
 {
     position: relative;
     display: inline-block;
+}
+
+.rabattekst a:hover{
+    filter: brightness(90%);
 }
 
 
@@ -368,8 +386,13 @@ header div
     font-size: 17pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 900;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+#shoptekst a:hover
+{
+    text-decoration: underline;
 }
 
 #besogshop
@@ -384,9 +407,10 @@ header div
 {
     display: flex;
     background-color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
+    /*padding-top: 40px;
+    padding-bottom: 40px;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .nyhedsbillede
@@ -409,9 +433,9 @@ header div
 
 
 /*layout på nyhedsbrev overskrift*/
- .tekstboks h2{
+.nyhed .tekstboks h2{
     color: #764207;
-    font-size: 30pt;
+    font-size: 3vw;
     font-family: myriad-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -675,7 +699,7 @@ footer img
 
     .tekstboks h1
     {   text-align: center;
-        font-size:55pt;
+        font-size:40pt !important;
         white-space: nowrap;
     }
 
@@ -721,7 +745,8 @@ footer img
         font-family: myriad-pro, sans-serif;
         font-weight: 550;
         font-size: 7vw;
-        text-align: center
+        text-align: center;
+        padding-left: 0;
     }
 
 /*----------STUDIERABAT---------*/
@@ -751,11 +776,10 @@ footer img
     .rabattekst h1
     {
         text-align: center;
-        font-size:55pt;
+        font-size:45pt;
         color: #b47e4c;
         font-family: social-gothic-rough, sans-serif;
         font-weight: 700;
-
     }
 
     #studierabatbillede, #studierabatbillede img
@@ -769,7 +793,6 @@ footer img
         height: auto;
         margin: 0;
         padding: 0;
-
     }
 
     .rabat #mobilkvinde img
@@ -778,8 +801,7 @@ footer img
         height: auto;
         margin: 0;
         padding: 0;
-        display: block;
-        object-fit: contain;
+        display: flex;
     } 
 
     /*-------------IKONER--------------*/
@@ -810,8 +832,8 @@ footer img
 
     .nyhed
     {
-        padding-top: 70px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        margin: 20px;
     }
   
     .nyhedsbillede
@@ -828,12 +850,11 @@ footer img
 
     .nyhed .tekstboks h2
     {
-        font-size: 7vw;
+        font-size: 6.5vw;
         white-space: nowrap;
         text-align: center;
         justify-content: center;
         max-width: 100%;
-        margin: auto;
     }
 
     .nyhed .tekstboks p
@@ -885,7 +906,6 @@ footer img
 
     .footerbokse
     {  
-        /*margin-top: -15px;*/
         flex-direction: column;
         text-align: center;
         background-color: #764207;
@@ -928,6 +948,11 @@ footer img
 
 
 
+
+/*---------------------IPAD RESPONSIVE------------------------------*/
+
+
+/*IPAD RESPONSIVE*/
 @media only screen and (min-width: 651px) and (max-width: 1023px ) 
 {
 /*---------------HEADER-----------------*/
@@ -990,24 +1015,16 @@ footer img
 
     .rabat
     {
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0;
-    }
-
-    .rabattekst
-    {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        justify-content: center;
+        max-width: 100%; 
     }
 
     .rabattekst h1
     {
         display: flex;
         font-size: 7.5vw;
+        padding-left: 8%;
+        padding-right: 8%; 
+        text-align: center;
     }
 
     .rabattekst p
@@ -1035,7 +1052,6 @@ footer img
     .ikoner img
     {
         width: 70%;
-        padding-top: 20px;
         display: flex;
         text-align: center;
         margin-left: auto;
@@ -1055,11 +1071,8 @@ footer img
         margin-right: auto;
         padding: 0;
         max-width: 100%;
-        padding-bottom: 60px;
-        padding-top: 60px;
-
-
     }
+
     .nyhedsbillede img
     {
         max-width: 100%;
@@ -1076,11 +1089,14 @@ footer img
         align-content: center;
     }
 
-    .tekstboks
+    .nyhed .tekstboks
     {
         max-width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
     }
-    .tekstboks h2
+
+    .nyhed .tekstboks h2
     {   
         font-size: 4vw;
         text-align: center;
@@ -1088,7 +1104,7 @@ footer img
         padding-bottom: 20px;
     }
 
-    .tekstboks p
+    .nyhed .tekstboks p
     {
         font-size: 3vw;
     }
@@ -1105,7 +1121,6 @@ footer img
         padding: 12px;
         font-size: 12px;
         font-size: 12pt;
-
     }
     
     
@@ -1125,7 +1140,7 @@ footer img
 
     .footerbokse div
     {
-        max-width: 40%;
+        width: 40%;
     }
 
 
