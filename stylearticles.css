@@ -586,6 +586,8 @@
 
     .kontakt{
         margin: 0px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .kontakt, .divboks{
@@ -651,19 +653,18 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-
+        height: auto;
     }
 
- .ipadomoms .ipadtreboks,  .ipadomoms #ipadkaffediv
+    .ipadomoms .ipadtreboks, .ipadomoms #ipadkaffediv
     {
         width: 50%;
-        display:flex;
+        display:block;
         justify-content: space-evenly;
     }
 
     #ipadkaffediv img
     {
-        
         max-width: 100%;
         max-height: 100%;  
         display: block;
@@ -677,13 +678,13 @@
 
     .ipadtreboks
     {
-        max-width: 50%;
         display: flex;
         background-color: #e6dfd6;
         flex-direction: column;
-        width: 100%;
         text-align: center;
-
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
     }
 
     .ipadtreboks h2
@@ -693,7 +694,6 @@
         font-size: 2.8vw;
         font-family: myriad-pro, sans-serif;
         font-style: normal;
-     
     }
 
     .ipadtreboks p
