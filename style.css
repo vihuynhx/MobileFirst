@@ -125,6 +125,7 @@ header div
   
   .dropdown-content a:hover {
     background-color: #cbb58f; 
+    text-decoration: none !important;
 }
   
   .dropdown:hover .dropdown-content {
@@ -134,7 +135,6 @@ header div
   .dropdown:hover .dropbtn { 
     text-decoration: underline;
 }
-
 
 
 /*--------------------------------------------------------------------/*
