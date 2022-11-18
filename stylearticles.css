@@ -59,15 +59,11 @@
     font-style: normal;
 }
 
-.bassin_graven #bas_imgvenstre_ipad{
-    padding-top: 4%;
-    padding-bottom: auto;
-    display: block;
+.bassin_graven .img_bassin_venstre{
+    padding-top: 25%;
+    padding-bottom: 25%;
     justify-content: center;
     align-items: center;
-}
-
-.img_bassin_venstre{
     max-width: 100%;
     max-height: 100%;
 }
@@ -233,8 +229,7 @@
         display: block;
         height: auto;
         width: 100%;
-        padding: 10%;
-        padding-top: 0px;
+        padding: 0 !important;
     }
 
     .bassin_graven div
@@ -299,10 +294,10 @@
     }
 
     .img_bassin_venstre{
-        display: block;
         justify-content: center;
         height: auto;
         width: 100%;
+        padding: 0 !important;
     }
 
     .slideshow-container{
