@@ -482,6 +482,7 @@
     margin-top: 0px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 30px;
 }
 
 /*flexbox til kontakt boksen og boksens farve og størrelse*/
@@ -651,7 +652,6 @@
     {
         display: flex;
         width: 100%;
-        align-items: center;
         justify-content: center;
         height: auto;
     }
@@ -665,11 +665,17 @@
 
     #ipadkaffediv img
     {
-        max-width: 100%;
-        max-height: 100%;  
-        display: block;
+        /*max-width: 100%;
+        max-height: 100%;*/  
+        display: none;
     }
     
+    #ipadkaffediv {
+        background-image: url(images/kaffe.jpg);
+        background-size: 152%;
+        background-position-x: center;
+        z-index: 1;
+    }
 
     .ipadicons 
     {
@@ -704,9 +710,6 @@
         line-height: 40px;
         white-space: nowrap;
     }
-
-
-
 
 
 
@@ -919,79 +922,4 @@
         width: 80%;
     }
 
-    .omos .boks
-    {
-        width: 100%;
-    }
-
-    .omos .boks p
-    {
-        font-size: 2.4vw;
-    }
-
-    .omos .boks h3, .omos .boks h2
-    {
-        font-size: 3vw;;
-    }
-
-    /*--------------------KAFFEBILLEDE--------------------*/
-    .ipadomoms
-    {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-
-    }
-
- .ipadomoms .ipadtreboks,  .ipadomoms #ipadkaffediv
-    {
-        width: 50%;
-        display:flex;
-        justify-content: space-evenly;
-    }
-
-    #ipadkaffediv img
-    {
-        
-        max-width: 100%;
-        max-height: 100%;  
-        display: block;
-    }
-    
-
-    .ipadicons 
-    {
-        flex-direction: row;
-    }
-
-    .ipadtreboks
-    {
-        max-width: 50%;
-        display: flex;
-        background-color: #e6dfd6;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-
-    }
-
-    .ipadtreboks h2
-    {
-        padding-top: 10px;
-        color: #764207;
-        font-size: 2.8vw;
-        font-family: myriad-pro, sans-serif;
-        font-style: normal;
-     
-    }
-
-    .ipadtreboks p
-    {   line-height:3px;
-        font-size: 2vw; 
-        font-family: myriad-pro, sans-serif;
-        font-style: normal;
-        line-height: 40px;
-        white-space: nowrap;
-    }
 }
