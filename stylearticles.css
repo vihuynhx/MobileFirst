@@ -59,15 +59,11 @@
     font-style: normal;
 }
 
-.bassin_graven #bas_imgvenstre_ipad{
-    padding-top: 4%;
-    padding-bottom: auto;
-    display: block;
+.bassin_graven .img_bassin_venstre{
+    padding-top: 25%;
+    padding-bottom: 25%;
     justify-content: center;
     align-items: center;
-}
-
-.img_bassin_venstre{
     max-width: 100%;
     max-height: 100%;
 }
@@ -233,8 +229,7 @@
         display: block;
         height: auto;
         width: 100%;
-        padding: 10%;
-        padding-top: 0px;
+        padding: 0 !important;
     }
 
     .bassin_graven div
@@ -299,10 +294,10 @@
     }
 
     .img_bassin_venstre{
-        display: block;
         justify-content: center;
         height: auto;
         width: 100%;
+        padding: 0 !important;
     }
 
     .slideshow-container{
@@ -549,7 +544,7 @@
     white-space: nowrap;
 }
 
-/*MOBIL RESPONSIVE til "OM OS" siden*/
+/*--------- MOBIL RESPONSIVE til "OM OS" siden ----------*/
 @media only screen and (max-width: 650px)
 {
     
@@ -615,6 +610,119 @@
     }
 
 }
+
+/*---------- RESPONSIVE IPAD TIL OM OS----------*/
+
+@media only screen and (min-width: 651px) and (max-width:1023px)
+{
+    .billedeboks
+    {display: none;}
+
+    .vier h1
+    {
+        white-space: nowrap;
+        font-size: 10vw;
+    }
+
+    .omos
+    {
+        max-width: 100%;
+    }
+
+    .omos .boks
+    {
+        width: 100%;
+    }
+
+    .omos .boks p
+    {
+        font-size: 2.4vw;
+    }
+
+    .omos .boks h3, .omos .boks h2
+    {
+        font-size: 3vw;;
+    }
+
+    /*--------------------KAFFEBILLEDE--------------------*/
+    .ipadomoms
+    {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+ .ipadomoms .ipadtreboks,  .ipadomoms #ipadkaffediv
+    {
+        width: 50%;
+        display:flex;
+        justify-content: space-evenly;
+    }
+
+    #ipadkaffediv img
+    {
+        
+        max-width: 100%;
+        max-height: 100%;  
+        display: block;
+    }
+    
+
+    .ipadicons 
+    {
+        flex-direction: row;
+    }
+
+    .ipadtreboks
+    {
+        max-width: 50%;
+        display: flex;
+        background-color: #e6dfd6;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .ipadtreboks h2
+    {
+        padding-top: 10px;
+        color: #764207;
+        font-size: 2.8vw;
+        font-family: myriad-pro, sans-serif;
+        font-style: normal;
+     
+    }
+
+    .ipadtreboks p
+    {   line-height:3px;
+        font-size: 2vw; 
+        font-family: myriad-pro, sans-serif;
+        font-style: normal;
+        line-height: 40px;
+        white-space: nowrap;
+    }
+
+
+
+
+
+
+}
+
+@media screen and (min-width: 1023px)
+{
+    .ipadomoms
+    {
+        display: none;
+    }
+}
+
+
+
+
 
 
 /*----------------------------- CSS til MENU siden ---------------------------*/
@@ -766,15 +874,15 @@
 }
 
 
-/* RESPONSIVE DESIGN TIL MOBIL FOR MENU-SIDEN */
+/*---------- RESPONSIVE TIL MOBIL FOR MENU-SIDEN ----------*/
 
 @media screen and (max-width: 650px){
     .menucontainer{
-        width: 90%;
+        width: 95%;
     }
 
     .coffeemenupic, .croissantpic{
-        width: 90%;
+        width: 95%;
     }
 
     .menucontainer #espresso ul li{
@@ -798,23 +906,20 @@
     }
 }
 
-/*RESPONSIVE IPAD TIL OM OS*/
-@media only screen and (min-width: 651px) and (max-width:1023px)
-{
-    .billedeboks
-    {display: none;}
 
-    .vier h1
-    {
-        white-space: nowrap;
-        font-size: 10vw;
+/*---------- RESPONSIVE TIL IPAD ----------*/
+
+@media screen and (min-width: 651px) and (max-width:1023px){
+
+    .menucontainer{
+        width: 80%;
     }
 
-    .omos
-    {
-        max-width: 100%;
+    .croissantpic, .coffeemenupic{
+        width: 80%;
     }
 
+<<<<<<< HEAD
     .omos .boks
     {
         width: 100%;
@@ -890,12 +995,10 @@
         line-height: 40px;
         white-space: nowrap;
     }
-}
+=======
 
-@media screen and (min-width: 1023px)
-{
-    .ipadomoms
-    {
-        display: none;
-    }
+
+
+
+>>>>>>> 32936fdb03fb7dd0af8bd59b7a8debb3b1ce2745
 }

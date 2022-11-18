@@ -54,7 +54,13 @@ header div
 
 .headersome .socialmedia #omos
 {
-    padding-top: 9px
+    padding-top: 9px;
+    height: 10px; 
+}
+
+.headersome .socialmedia #omos:hover
+{
+    filter: brightness(80%);
 }
 
 .headersome
@@ -380,8 +386,13 @@ header div
     font-size: 17pt;
     font-family: myriad-pro, sans-serif;
     font-weight: 900;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+#shoptekst a:hover
+{
+    text-decoration: underline;
 }
 
 #besogshop
@@ -396,8 +407,8 @@ header div
 {
     display: flex;
     background-color: white;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    /*padding-top: 40px;
+    padding-bottom: 40px;*/
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -821,8 +832,8 @@ footer img
 
     .nyhed
     {
-        padding-top: 70px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        margin: 20px;
     }
   
     .nyhedsbillede
@@ -839,12 +850,11 @@ footer img
 
     .nyhed .tekstboks h2
     {
-        font-size: 7vw;
+        font-size: 6.5vw;
         white-space: nowrap;
         text-align: center;
         justify-content: center;
         max-width: 100%;
-        margin: auto;
     }
 
     .nyhed .tekstboks p
@@ -1061,8 +1071,6 @@ footer img
         margin-right: auto;
         padding: 0;
         max-width: 100%;
-        padding-bottom: 60px;
-        padding-top: 60px;
     }
 
     .nyhedsbillede img
@@ -1132,7 +1140,7 @@ footer img
 
     .footerbokse div
     {
-        max-width: 40%;
+        width: 40%;
     }
 
 
