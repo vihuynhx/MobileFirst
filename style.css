@@ -478,7 +478,7 @@ header div
 .nyhedsbrevbody h1
 {
     color: #bb7700;
-    font-size: 30pt;
+    font-size: 50pt;
     font-family: social-gothic-rough, sans-serif;
 }
 
@@ -512,8 +512,9 @@ header div
 #tekstmail p
 {
     font-family:'Dosis', sans-serif;
-    font-size: 15pt;
+    font-size: 17pt;
     white-space: nowrap;
+    padding-bottom: 20px;
 }
 
 .nyhedsbrevbody button
